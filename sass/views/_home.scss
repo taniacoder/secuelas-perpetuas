@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: $font_roboto_slab;
+}
+.bg-video {
+}
+/*botones redes*/
+.share-buttons-square {
+    margin-top: 1%;
+}
+.fb_iframe_widget_fluid {
+    display: inline-block;
+}
+/**/
+.bg-video div.contenedor {
+	position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    -webkit-transition: 0.25s ease-out height;
+    transition: 0.25s ease-out height;
+}
+.hero-overlay {
+	background: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bg-video video {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -30%) scale(1.025);
+    -ms-transform: translate(-50%, -30%) scale(1.025);
+    transform: translate(-50%, -30%) scale(1.025);
+
+ }
+.content-logo {
+    /*display:flex;*/
+        padding: 9% 0 2% 6%
+}
+.title {
+    /*position: absolute;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*height: 78%;*/
+    text-align: center;
+}
+
+.title p {
+	color: white;
+	letter-spacing: 2px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000;
+}
+span.hashtag {
+	background-color: #cc7a18;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33);
+    font-family: 'Cabin', sans-serif;
+}
+
+.intro {
+    p {
+        margin: 3% 0;
+       font-size: 16px; 
+    }
+}
+.fixed-top{
+    position: fixed;
+    top: 0;
+}
+
+.tw-meli {
+    text-shadow: 2px 2px 1px #000;
+    text-align: right;
+    margin-bottom: 1%;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+
+}
+
+/*media*/
+@media screen and (max-width: 2218px) {
+	.bg-video video {
+
+    -webkit-transform: translate(-50%, -31%) scale(1.025);
+    -ms-transform: translate(-50%, -31%) scale(1.025);
+    transform: translate(-50%, -31%) scale(1.025);
+	}
+
+ }
+@media screen and (max-width: 1700px) {
+	.bg-video video {
+
+    -webkit-transform: translate(-50%, -32%) scale(1.025);
+    -ms-transform: translate(-50%, -32%) scale(1.025);
+    transform: translate(-50%, -32%) scale(1.025);
+	}
+
+ }
+
+ @media screen and (max-width: 1500px) {
+	.bg-video video {
+
+    height: auto;
+    -webkit-transform: translate(-50%, -39%) scale(1.025);
+    -ms-transform: translate(-50%, -39%) scale(1.025);
+    transform: translate(-50%, -39%) scale(1.025);
+	}
+
+ }
+@media screen and (max-width: 900px) {
+    .bg-video video {
+
+    height: auto;
+    -webkit-transform: translate(-50%, -35%) scale(1.025);
+    -ms-transform: translate(-50%, -35%) scale(1.025);
+    transform: translate(-50%, -35%) scale(1.025);
+    }
+ }
+@media screen and (max-width: 800px) {
+	header nav {
+		width: 100%;
+	}
+	header {
+   	flex-direction:column; 
+	}
+	.bg-video video {
+
+    height: auto;
+    -webkit-transform: translate(-50%, -35%) scale(1.025);
+    -ms-transform: translate(-50%, -35%) scale(1.025);
+    transform: translate(-50%, -35%) scale(1.025);
+	}
+}
+@media screen and (max-width: 500px) {
+    .imgresponsive {
+        width: 80%;
+    }
+    .fa-5x {
+        font-size: 3em!important;
+    }
+    .bg-video video {
+
+    height: auto;
+    -webkit-transform: translate(-50%, -30%) scale(1.025);
+    -ms-transform: translate(-50%, -30%) scale(1.025);
+    transform: translate(-50%, -30%) scale(1.025);
+    }
+	header {
+   	flex-direction:column; 
+	}
+	header nav {
+	flex-direction:column; 
+	}
+	.title {
+    position: relative;
+    text-align: center;
+	}
+	h1 img {
+		width: 70%;
+	}
+    .title p {
+    font-size: 1.5rem;
+    }
+    span.hashtag {
+    font-size: 1.6rem;
+    }
+
+}
+.section1 .parallax{
+  position: fixed;
+}
+
+
+#video_background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("images/Secuencia 01_5.mp4");
+    right: 0px;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+.intro{
+    padding: 5% 0;
+    background-color: white;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.section1 .parallax {
+    position: fixed;
+}
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 720px;
+}

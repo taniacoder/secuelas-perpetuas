@@ -1,0 +1,290 @@
+
+html
+	head
+		include base/head.pug
+	    		
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		#main
+			.menu.menu-color
+				include base/menu.pug
+			section.container.intro-shipibas
+				.row
+					.col-lg-12.txt-intro-shipibas
+						p Mujeres shipibas de Ucayali fueron esterilizadas sin ser informadas del motivo de la operación. Unas eran registradas en listas para recoger vitaminas y medicinas, pero en realidad eran listas de mujeres a esterilizar; otras fueron ligadas al dar a luz.Las víctimas son de los distritos de Iparia y Masisea, a ocho horas de Pucallpa; de Padre Márquez, a siete horas; y de Yarinacocha, distrito cercano a la ciudad.
+
+
+
+			section.page.container-fluid.testimonios
+				.row.a
+					a.col-lg-6.col-md-6.col-xs-12.box(href='dinapangoa.html')
+						img(src="images/shipiba-1.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							<!--.btn.ver-video Ver video-->
+							<!-- i(class="icon-youtube-play" aria-hidden="true") -->
+
+							p Dina Pangoa Vásquez 
+							p.info “A mí me han llevado, ellos son los culpables”
+
+					a.col-lg-6.col-md-6.col-xs-12.box(href='julianalomas.html')
+						img(src="images/julianalomas.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Juliana Lomas Cauper 
+							p.info “Apagaron la luz, prendieron una más pequeña, temblaba, no sabía que me hacían” 
+				.row.a
+					a.col-lg-6.col-md-6.col-xs-12.box(href='lidiarodriguez.html')
+						img(src="images/lidiarodriguez.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Lidia Rodríguez Gonzáles
+							p.info “Pensé que me hacían eso para curarme la hemorragia”
+
+					a.col-lg-6.col-md-6.col-xs-12.box(href='luciazumaeta.html')
+						img(src="images/luciazumaeta.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Lucía Zumaeta López 
+							p.info “Me hicieron la cesárea y la ligadura al mismo tiempo”
+
+				.row.a
+					a.col-lg-6.col-md-6.col-xs-12.box(href='nildarojas.html')
+						img(src="images/nildarojas.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Nilda Rojas Martínez 
+							p.info “Yo iba por cesárea,  no dije nunca que me ligaran” 
+ 
+					a.col-lg-6.col-md-6.col-xs-12.box(href='virginiavasquez.html')
+						img(src="images/virginiavasquez.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Virginia Vásquez Mejías
+							p.info “El enfermero nos dijo: las ligamos en reemplazo de las que se han escapado” 
+
+
+		.container.album-fotos.mt-4
+			h2 Más testimonios
+			br
+			#main_area
+				// Slider
+				.row
+					#slider.col-xs-12
+						// Top part of the slider
+						.row
+							#carousel-bounding-box.col-sm-8
+								#myCarousel.carousel.slide
+									// Carousel items
+									.carousel-inner
+										.active.item(data-slide-number='0')
+											img(src='images/album-shipibas/lucila-sanchez.jpg')
+										.item(data-slide-number='1')
+											img(src='images/album-shipibas/antonia-lopez.jpg')
+										.item(data-slide-number='2')
+											img(src='images/album-shipibas/noemizumaeta.jpg')
+										.item(data-slide-number='3')
+											img(src='images/album-shipibas/berthamori.jpg')
+										.item(data-slide-number='4')
+											img(src='images/album-shipibas/doravazquez.jpg')
+										.item(data-slide-number='5')
+											img(src='images/album-shipibas/hildareategui.jpg')
+										.item(data-slide-number='6')
+											img(src='images/album-shipibas/luzmilasilvano.jpg')
+										.item(data-slide-number='7')
+											img(src='images/album-shipibas/nildapino.jpg')
+										.item(data-slide-number='8')
+											img(src='images/album-shipibas/romelialopez.jpg')
+										.item(data-slide-number='9')
+											img(src='images/album-shipibas/maria-maldonado.jpg')
+										.item(data-slide-number='10')
+											img(src='images/album-shipibas/isabelgarcia.jpg')
+										.item(data-slide-number='11')
+											img(src='images/album-shipibas/dorafernadez.jpg')
+										.item(data-slide-number='12')
+											img(src='images/album-shipibas/normamori.jpg')
+										.item(data-slide-number='13')
+											img(src='images/album-shipibas/agustina-saldaña.jpg')
+										.item(data-slide-number='14')
+											img(src='images/album-shipibas/rosasanchez.jpg')
+
+									// Carousel nav
+									a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+										span.glyphicon.glyphicon-chevron-left
+									a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+										span.glyphicon.glyphicon-chevron-right
+							#carousel-text.col-sm-4
+							#slide-content(style='display: none;')
+								#slide-content-0
+									h2 Lucila Sánchez Romayna
+									p Año 1999. 33 años. Nivel de instrucción: primero de primaria. Esterilizada con engaños en el Centro de Salud de Iparía. (Distrito Iparía, provincia Coronel Portillo - Ucayali)
+									p.sub-text
+										|“La enfermera Nancy de la posta de Belén me dijo que bajará al Centro de Salud para hacerle chequeos a mi bebé y para recoger medicinas...Me llamaron con una lista para que entre a una sala, me agarraron de los brazos como si fuese un animal…no entendía por qué tenía ese corte”. 
+										
+								#slide-content-1
+									h2 Antonia López Zumaeta
+									p Año 1999. 33 años. Nivel de instrucción: primaria completa. Esterilizada con engaños en el Centro de Salud Iparía. (Distrito Iparía, provincia Coronel Portillo - Ucayali)
+									p.sub-text
+										|“Las enfermeras me dijeron que podía ir al Centro de Salud para recoger medicinas...Veía a mujeres entrando y saliendo en camillas, yo pensaba que les estaban haciendo el Papanicolaou…Sacaron una lista y me llamaron por mi nombre...al despertar ya estaba ligada”.
+										
+								#slide-content-2
+									h2 Noemí Franco Zumaeta
+									p Año 1996. 40 años. Nivel de instrucción: cuarto de primaria. Esterilizada con hostigamiento y a la fuerza en el Centro de Salud Iparía. (Distrito Iparía, provincia Coronel Portillo - Ucayali)
+									p.sub-text
+										|“Las enfermeras del puesto de salud Galilea me querían llevar, yo les decía que no...Me decían que tenía que ir porque ya estaba en la lista para ligaduras del Centro de Salud Iparía…En la sala yo decía que no quería, el doctor me agarró de los dos brazos, y otro me puso una inyección”. 
+										
+								#slide-content-3
+									h2 Bertha Mori Nunta
+									p Año 1996. 21 años. Nivel de instrucción: primaria completa. Esterilizada con hostigamiento y a la fuerza en el Centro de Salud Masisea. (Distrito Masisea, provincia Coronel Portillo - Ucayali)
+									p.sub-text
+										|“Enfermeras del puesto de Abujao iban a mi casa a exigirme que me ligue en el centro de salud Masisea. Me decían que yo era menor de edad, pero que me pondría en la lista que tenía 28 años...Me amarraron, les dije a los doctores que no quería, pero me dijeron que yo ya había decidido”.
+ 
+										
+								#slide-content-4
+									h2 Dora Vásquez Sánchez
+									p Año 1999. 25 años. Nivel de instrucción: cuarto de secundaria. Esterilizada con engaños en el Centro de Salud Masisea. (Distrito Masisea, provincia Coronel Portillo - Ucayali) 
+									p.sub-text
+										|“Trabajadores del puesto de Bella Flor fueron a mi casa, me dijeron que en el centro de salud me darían píldoras para cuidarme...me pusieron en una camilla, me sacaron la ropa, tenía temor, no entendía por qué me hacían eso, no tuve la valentía de preguntarles…La parte donde me ligaron se infectó”. 
+										
+								#slide-content-5
+									h2 Hilda Castro Reátegui
+									p Año 1997. 37 años. Grado de instrucción: iletrado/sin instrucción. Esterilizada con amenazas en el Hospital de Contamana (Distrito Contamana, provincia Ucayali - Loreto)
+									p.sub-text
+										|“El doctor dijo que había llegado un documento del Hospital de Contamana para que todas se liguen por orden del gobierno, dijo que si no iban a venir personas “alzados en armas” para llevarse a nuestros hijos...En el hospital había seis policías. Queríamos escapar pero nos daban miedo los policías”.
+
+										
+								#slide-content-6
+									h2 Luzmila Silvano de Guimaraes
+									p Año 1998. 38 años. Grado de instrucción: cuarto de primaria. Esterilizada con amenazas en el Hospital de Contamana. (Distrito Contamana, provincia Ucayali - Loreto) 
+									p.sub-text
+										|“Mandaron una información del Hospital de Contamana para que todas nos ligáramos por una ley del Gobierno. Yo no quería, pero los doctores decían que si no en algunos años vendrían los chinos a quitarnos a nuestros hijos...Me amarraron las manos porque me movía mucho en la camilla”.
+										
+								#slide-content-7
+									h2 Nilda Pino Canayo  
+									p Año 1996. 24 años. Nivel de instrucción: primaria completa. Esterilizada a la fuerza y con violencia en el Hospital Regional de Pucallpa. (Ciudad de Pucallpa - Ucayali)
+									p.sub-text
+										|“Les dije: ustedes están ganando dinero con nosotras por las ligaduras, yo sé eso porque trabajo con la madre María Dolores (monja)...Un enfermero dijo que mi vagina parecía un labio, me manoseaba...Yo les decía: ¿por qué me están haciendo esto? Me decían que ellos solo cumplían órdenes”.
+										
+								#slide-content-8
+									h2 Romelia López Quesus
+									p Año 1996. 30 años. Nivel de instrucción: primaria completa. Esterilizada con engaños y soborno en el Hospital Regional de Pucallpa. (Ciudad de Pucallpa - Ucayali)
+									p.sub-text
+										|“Me trajeron al puesto de salud Santa Rosa, y de allí, sin yo saber, me llevaron al Hospital Regional de Pucallpa…Me hicieron pasar a una sala, y me dijeron que me iban a hacer la ligadura. Les dije varias veces que no quería, pero me dijeron que me entregarían ropa, alimentos, dinero”.   
+										
+								#slide-content-9
+									h2 María Maldonado Rojas 
+									p Año 1996. 30 años. Grado de instrucción: primaria completo. Esterilizada con hostigamiento y a la fuerza en el Hospital Amazónico. (Ciudad de Pucallpa - Ucayali) 
+									p.sub-text
+										|“Fui al Hospital y mi primo Miguel Rojas (asistente de cirujano del hospital) me recibió y me dijo que ya no debía tener más hijos porque así lo mandaba el Gobierno…En la sala de operación me hicieron firmar un papel en español, yo sólo sé shipibo, no sé de qué era ese papel”.
+										
+								#slide-content-10
+									h2 Isabel García Tenazoa
+									p Año 1997. 27 años. Grado de instrucción: secundaria completa. Esterilizada con hostigamiento y a la fuerza en el Hospital Amazónico. (Ciudad de Pucallpa - Ucayali) 
+									p.sub-text
+										|“Me obligaron a firmar un papel que no entendía…Ocho señoras entraron primero, yo fui la última. Pasaban delante de mí y veía que caían sus lágrimas…Me amarraron los brazos, una enfermera me agarraba la cabeza y me decía: No grite para que el doctor pueda terminar rápido”. 
+										
+								#slide-content-11
+									h2 Dora Fernández Barbarán
+									p Año 1998. 34 años. Grado de instrucción: primaria completa. Esterilizada con hostigamiento y  violencia en el Hospital Amazónico. (Ciudad de Pucallpa - Ucayali)  
+									p.sub-text
+										|“Insistían para que me ligara. Me llevaron a una sala, me quitaron la ropa. Les dije que no quería. Les dije: ¿Quién les ha dicho que me hagan esto?,  ¿mi marido, mis padres?...Le jalé el pelo a la enfermera, ella me golpeó. Llamaron a otras enfermeras porque yo seguía jalándole el pelo”.
+										
+								#slide-content-12
+									h2 Norma Mori Silvano 
+									p Año 1999. 25 años. Grado de instrucción: tercero de primaria. Esterilizada con engaños y a la fuerza en el Hospital Amazónico. (Ciudad de Pucallpa - Ucayali)
+									p.sub-text
+										|“Las enfermeras del puesto de salud de Pachitea me dijeron para ir a pasear a Pucallpa, yo confiaba en ellas…Me llevaron al puerto de Pucallpa en bote y de ahí al hospital en motocar… En un cuarto me amarraron las manos y me ligaron…Me dijeron que ya podía irme y que nunca más tendría hijos”.
+										
+								#slide-content-13
+									h2 Agustina Saldaña Rengifo  
+									p Año 1996. 30 años. Nivel de instrucción: primaria completa. Esterilizada con hostigamiento y a la fuerza en el Hospital Amazónico. (Ciudad de Pucallpa- Ucayali) 
+									p.sub-text
+										|“Me dijeron que me calateara, varias señoras hacían cola, yo las miraba asustadas. Sácate la ropa me decían, como Eva…En la cama desnuda, amarrada, el doctor me decía que ya nunca iba a tener hijos, que me iban a hacer la ligadura porque estaban haciendo campaña”.
+										
+								#slide-content-14
+									h2 Rosa Sánchez Barbarán  
+									p Año 2000. 33 años. Grado de instrucción: segundo de secundaria. Esterilizada con engaños en el Hospital Amazónico. (Ciudad de Pucallpa - Ucayali) 
+									p.sub-text
+										|“Me enteré que todas las mujeres debían inscribirse en el Hospital Amazónico para campaña de salud…Recién en el hospital me enteré que la campaña era para no tener más hijos, ya estaba en la lista antes de saber para qué era…No he firmado ningún papel para que me hagan la ligadura”. 
+																					
+			.container
+				.row
+					.col-md-12
+						#media.carousel.slide.media-carousel
+							.carousel-inner
+								.item.active
+									.row
+										.col-md-3.col-sm-3
+											a#carousel-selector-0.thumbnail
+												img(src='images/album-shipibas/lucila-sanchez.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-1.thumbnail
+												img(src='images/album-shipibas/antonia-lopez.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-2.thumbnail
+												img(src='images/album-shipibas/noemizumaeta.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-3.thumbnail
+												img(src='images/album-shipibas/berthamori.jpg')
+								.item
+									.row
+										.col-md-3.col-sm-3
+											a#carousel-selector-4.thumbnail
+												img(src='images/album-shipibas/doravazquez.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-5.thumbnail
+												img(src='images/album-shipibas/hildareategui.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-6.thumbnail
+												img(src='images/album-shipibas/luzmilasilvano.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-7.thumbnail
+												img(src='images/album-shipibas/nildapino.jpg')
+								.item
+									.row
+										.col-md-3.col-sm-3
+											a#carousel-selector-8.thumbnail
+												img(src='images/album-shipibas/romelialopez.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-9.thumbnail
+												img(src='images/album-shipibas/maria-maldonado.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-10.thumbnail
+												img(src='images/album-shipibas/isabelgarcia.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-11.thumbnail
+												img(src='images/album-shipibas/dorafernadez.jpg')
+								.item
+									.row
+										.col-md-3.col-sm-3
+											a#carousel-selector-12.thumbnail
+												img(src='images/album-shipibas/normamori.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-13.thumbnail
+												img(src='images/album-shipibas/agustina-saldaña.jpg')
+										.col-md-3.col-sm-3
+											a#carousel-selector-14.thumbnail
+												img(src='images/album-shipibas/rosasanchez.jpg')
+
+							a.left.carousel-control(data-slide='prev', href='#media') ‹
+							a.right.carousel-control(data-slide='next', href='#media') ›
+
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug

@@ -1,0 +1,75 @@
+
+html
+	head
+		include base/head.pug
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+						
+
+		.menu.menu-color
+			include base/menu.pug
+
+		include mixin/relacionados-shipibas.pug
+
+		.casos-shipibas.container-fluid
+			.container
+				h2 Nilda Rojas Martínez : “Yo iba por cesárea,  no dije nunca que me ligaran”
+
+
+
+				.row
+					.col-lg-8.col-md-8.col-sm-8
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/gqUF7W5s8V8?rel=0&amp;showinfo=0?rel=0&autoplay=1",frameborder="0",allowfullscreen="")
+					.col-lg-4.col-md-4.col-sm-4.fichat
+						img(src="images/nildarojas-fichas.jpg" width="60%" alt="")
+						ul
+							li 
+								b Víctima:
+								|Nilda Rojas Martínez 
+							li 
+								b Grado de instrucción: 
+								|quinto de primaria  
+							li 
+								b Fecha del hecho: 
+								|1999
+							li 
+								b Modus Operandi:  
+								|Engaño
+							li 
+								b Edad de la ligadura: 
+								|37
+							li 
+								b Vivía en: 
+								|Comunidad Teodoro Vinder 1, distrito Yarinacocha, provincia Coronel Portillo.
+							li 
+								b Responsables de la ligadura: 
+								| Hospital Amazónico (ciudad de Pucallpa) 
+				.row.traduccion
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_español4();",value="Español")
+								input(type="button",onclick="javascript:cambia_shipibo4();",value="Shipibo")
+						#capa-4
+							p Cada vez que Nilda Rojas Martínez se acuerda como se aprovecharon de ella no puede parar de llorar. Cada vez que recuerda como el mismo día que falleció su recién nacido las enfermeras le decían fríamente: “si pues, te hemos ligado”, llora con frustración.   
+							p Nilda tenía ocho meses de embarazo, se sentía con la presión alta y dolor de cabeza. Por ello fue al Hospital Amazónico, ubicado en la ciudad de Pucallpa, porque sentía que era el momento de dar a luz. 
+							p Antes de entrar a la sala de operación le hicieron firmar un documento, ella pensó que estaba firmando para la cesárea, se sentía tan mal que firmó rápido y sin preguntar, nunca supo que fue lo que firmó.  
+							p “Yo no pensé que me iban a hacer la ligadura, solamente cesárea, yo no dije nunca que me hagan ligadura”.   
+							p “Al día siguiente de la operación falleció mi niño, se lo entregaron a mi mamá. Mi papá le preparó un pequeño ataúd. Nunca pude ver su rostro porque tenía que permanecer en el Hospital”. 
+							p “La enfermera me dijo que me habían hecho también la ligadura, y me sentí mal, yo no estaba de acuerdo”. 
+							p Nilda quería tener más hijos varones. Solo tenía un niño y el bebé que falleció. Pero no la dejaron decidir sobre su propio cuerpo, como si su palabra no importará, la cortaron en silencio. 
+							p “El hospital nunca me entregó ningún documento del fallecimiento de mi hijo, ni tampoco ningún documento de la ligadura”. Efectivamente, La República consiguió su historia clínica y no hay señales de ningún tipo de autorización para la esterilización. Fue contra su voluntad. 
+								
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug

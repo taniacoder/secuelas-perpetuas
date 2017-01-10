@@ -1,0 +1,78 @@
+
+html
+	head
+		include base/head.pug
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+						
+		.menu.menu-color
+			include base/menu.pug
+
+		include mixin/relacionados-cusco.pug
+
+
+		.casos-shipibas.container-fluid
+			.container
+				h2 Ernestina Mamani Quispe : “Me dieron un papel para firmar, estaba llorando, no sé leer”
+
+
+				.row
+					.col-lg-8.col-md-8.col-sm-8
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/Uf9Af3ANEbE?rel=0&amp;showinfo=0?rel=0&autoplay=1",frameborder="0",allowfullscreen="")
+					.col-lg-4.col-md-4.col-sm-4.fichat
+						img(src="images/ernestinamamani-fichas.jpg" width="60%" alt="")
+						ul
+							li 
+								b Víctima: 
+								|Ernestina Mamani Quispe
+							li 
+								b Grado de instrucción: 
+								|tercero de primaria
+							li 
+								b Fecha del hecho: 
+								|1997
+							li 
+								b Modus Operandi:  
+								|Hostigamiento, Violencia
+							li 
+								b Edad de la ligadura: 
+								|29
+							li 
+								b Vivía en: 
+								|Comunidad Patacancha, distrito Huancarani, provincia Paucartambo. 
+							li 
+								b Responsables de la captación: 
+								|Centro de Salud Huancarani 
+							li 
+								b Responsables de la ligadura: 
+								|Hospital de Paucartambo
+				.row.traduccion
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_españolc3();",value="Español")
+								input(type="button",onclick="javascript:cambia_quechuac3();",value="Quechua")
+						#capa-c3
+							p “¡Hasta cuándo vas a tener tus hijos, como el cuy, como el chancho!”, así le dijeron a Ernestina Mamani Quispe las enfermeras del Centro de Salud de Huancarani (distrito Huancarani, provincia Paucartambo, región Cusco) en una de sus tantas visitas para captarla  y posteriormente  llevarla a ligar al Hospital de Paucartambo. 
+							p En una de aquellas atemorizantes visitas Ernestina estaba sembrando papa, vio que las enfermeras de acercaban, se escondió, pero la agarraron. La metieron a la fuerza a una ambulancia, rumbo al Hospital.  
+							p “Me llevaron al Hospital de Paucartambo, ahí me estaba escapando, pero el policía me ha agarrado y me llevó como si estuviese presa”.  
+							p Ernestina lloraba y gritaba con todas sus fuerzas. El personal de salud molesto le decía que se calmara porque con su actitud estaba incentivando a las demás señoras a escaparse, a asustarse.
+							p “Me dieron un papel para firmar, estaba llorando, no sé leer. Firma, firma, firma, me decían, me obligaron a firmar y yo sin conocimiento lo hice”.  
+							p “Cuando me han puesto a la cama, me han puesto la inyección (anestesia). Me agarraron de las manos, me aplastaron con su rodilla en la barriga, y me dijeron: ahí chiquitito no más te van a hacer la ligadura, por gusto pataleas”.
+							p Ernestina recién reaccionó cuando llegó a su casa en Huancarani. Las enfermeras  la llevaron de regreso. Una vecina le dijo: “Habías estado viva todavía Ernestina, yo pensé que te habías muerto, porque toda inconsciente te han traído”. 
+							
+
+								
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug

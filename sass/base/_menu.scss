@@ -1,0 +1,74 @@
+/*menu*/
+.menu {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5%;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    	.container:before, 
+	.container:after {
+		content: initial;
+	}
+}
+.menu-scroll {
+	position: fixed;
+}
+.menu-home {
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  position: fixed;
+}
+.menu-color {
+  background-color: #9b3604;
+  background-image: none;
+}
+a:hover, a:focus {
+    color: #757574;
+    text-decoration: none;
+}
+
+header {
+	padding: 1%;
+   /*FLEX*/
+   	display: flex;
+   	justify-content:space-between;
+   	align-items:center;
+   	flex-direction:row; 
+   	flex-wrap:wrap;
+
+}
+
+header nav {
+	width: 50%;
+	/*FLEX*/
+   	display: flex;
+   	flex-wrap:wrap;
+   	align-items:center;
+
+}
+
+header nav a {
+	letter-spacing: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.9rem;
+	font-family: 'Cabin', sans-serif;
+
+	text-align:center;
+	text-decoration: none;
+	padding: 2%;
+	   /*FLEX*/
+   	flex-grow:1;
+
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
+}
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+    box-shadow:none;
+}
+
+/*menu*/

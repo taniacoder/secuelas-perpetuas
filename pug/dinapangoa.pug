@@ -1,0 +1,75 @@
+
+html
+	head
+		include base/head.pug
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+		.menu.menu-color
+			include base/menu.pug
+
+		include mixin/relacionados-shipibas.pug
+
+		.casos-shipibas.container-fluid
+			.container
+				h2 Dina Pangoa Vásquez: “A mí me han llevado, ellos son los culpables” 
+				.row
+					.col-lg-8.col-md-8.col-sm-8
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/5OLt4l4-rgA?rel=0&amp;showinfo=0?rel=0&autoplay=1",frameborder="0",allowfullscreen="")
+					.col-lg-4.col-md-4.col-sm-4.fichat
+						img(src="images/dinapangoa-ficha.jpg" width="60%" alt="")
+						ul
+							li 
+								b Víctima:
+								|Dina Pangoa Vásquez
+							li 
+								b Grado de instrucción: 
+								|tercero de primaria 
+							li 
+								b Fecha del hecho: 
+								|1997
+							li 
+								b Modus Operandi:  
+								|Engaño
+							li 
+								b Edad de la ligadura: 
+								|37
+							li 
+								b Vivía en: 
+								|Vista Alegre de Pashitea, distrito Masisea, provincia Coronel Portillo.
+							li 
+								b Responsables de la captación: 
+								|Puesto de Santa Rosa
+							li 
+								b Responsables de la ligadura: 
+								|Centro de Salud Masisea
+				.row.traduccion
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_español();",value="Español")
+								input(type="button",onclick="javascript:cambia_shipibo();",value="Shipibo")
+						#capa
+							 
+							p Dina Pangosa Vásquez fue vilmente engañada por los enfermeros del puesto de salud Santa Rosa (distrito Masisea, provincia Coronel Portillo, región Pucallpa). La subieron a un bote para llevarla al Centro de Salud de Masisea con la promesa de brindarle un chequeo médico. Dina, su amiga shipiba Gloria, y dos señoras mestizas (no shipibas) navegaron a través del río Pashitea con dirección al encuentro con sus verdugos.
+							p Sacaron la lista de Masisea, y las empezaron a llamar una a una por su nombre para pasar a una sala.
+							p “Me dijeron que me eche en la camilla, yo me eché porque pensé que era para la consulta. Me pusieron una inyección sin decirme nada, nadie me explicó lo que me iban a hacer, empecé a sentirme adormecida”.
+							p Cuando Dina despertó luego de la anestesia, ya estaba esterilizada. No podía caminar, le dolía mucho el cuerpo, no sabía por qué tenía un corte. Un enfermero de forma muy tranquila le dijo que la habían ligado para no tener más hijos, y le recomendó cuidarse bien hasta que sane la herida.
+							p “Yo misma no he ido al centro de salud, a mí me han llevado...yo no sé nada, no sé cómo hacer, quiero justicia, ellos son los culpables”.
+							
+	
+
+								
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug

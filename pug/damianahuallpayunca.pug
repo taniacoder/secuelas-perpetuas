@@ -1,0 +1,91 @@
+
+html
+	head
+		include base/head.pug
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+		.menu.menu-color
+				include base/menu.pug
+
+		include mixin/relacionados-cusco.pug
+
+
+		.casos-shipibas.container-fluid
+			.container
+				h2 Damiana Huallpayunca Quispe : “A mi esposo lo obligaron a firmar para que me liguen” 
+
+
+				.row
+					.col-lg-9.col-md-9.col-sm-9
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/ZPc6Lmf0V2E?rel=0&amp;showinfo=0?rel=0&autoplay=1",frameborder="0",allowfullscreen="")
+					.col-lg-3.col-md-3.col-sm-3.fichat
+						.thumbnail(href='ninamamani.html')
+							img(src="images/damianahuallapayunca-fichas.jpg")
+							.caption
+								ul
+									li 
+										b Víctima: 
+										|Damiana Huallpayunca Quispe 
+									li 
+										b Grado de instrucción: 
+										|primero de primaria
+									li 
+										b Fecha del hecho: 
+										|1996
+									li 
+										b Modus Operandi:  
+										|Hostigamiento, Amenaza, Violencia
+									li 
+										b Edad de la ligadura: 
+										|39
+									li 
+										b Vivía en: 
+										|Comunidad Mahuaypampa, distrito Maras, provincia Urubamba.
+									li 
+										b Responsables de la ligadura: 
+										| Hospital Antonio Lorena (ciudad de Cusco
+				.row.traduccion
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_españolc2();",value="Español")
+								input(type="button",onclick="javascript:cambia_quechuac2();",value="Quechua")
+						#capa-c2
+							p Damiana Huallpayunca Quispe piensa que si hubiera tenido una mejor educación (su nivel de instrucción es primero de primaria) o dinero, no hubieran violentado su cuerpo ni jugado con su mente. 
+							p Fue a dar a luz al Hospital Antonio Lorena, en la ciudad de Cusco. Inmediatamente después las enfermeras la rodearon exigiéndole que debía ligarse porque ya tenía muchos hijos. Durante los tres días que permaneció en el hospital se le aparecían a toda hora a decirle lo mismo. 
+							p A Damiana no le explicaron mucho en qué consistía una ligadura, pero igual ella se mantuvo firme en todo momento diciendo que no quería. Pasado los tres días, cuando su esposo fue a recogerla al hospital, las amenazas y el hostigamiento agudizaron:  
+							p -“Fujimori, el presidente, nos ha ordenado no solamente a ti sino a todas, a bastantes hemos ligado. En todas las postas de salud de todos los distritos están ligando. El presidente, ha ordenado”. 
+							p -“Si no quieres que tu esposa se ligue a ti te vamos a hacer la ligadura”.   
+							p -“Si no dejas que le hagamos la ligadura la guardia vendrá y los llevará”. 
+							p Así, chantajearon y obligaron al esposo de Damiana a firmar un papel para que la esterilizaran contra su voluntad. 
+							p “ Cuando me han puesto la inyección (anestesia) me han amarrado mis manos, y me dijeron: “señora cuenta” Me ha hecho contar. El doctor hablaba gritando, tenía su carácter: ¡¡hasta cincuenta cuenta!! No he llegado a contar hasta cincuenta, tenía mucho miedo y luego he empezado a quedarme como muerta”
+
+		section.cuadro-jalador
+			.container
+				h2 Aquí la Investigación
+				.row
+					a.col-lg-4.col-md-4(href='shipibas.html')
+						h3 UCAYALY
+						img(src="images/ernestinamamani.jpg")
+					a.col-lg-4.col-md-4(href='cusco.html')
+						h3 CUSCO
+						img(src="images/martinacamala.jpg")
+					a.col-lg-4.col-md-4(href='investigaciones.html')
+						h3 ARCHIVOS
+						img(src="images/martinacamala.jpg")
+
+								
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug

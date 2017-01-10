@@ -1,0 +1,102 @@
+
+html
+	head
+		include base/head.pug
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+						
+		div.la-republica.v-center
+			a(href="http://larepublica.pe/",alt="la_republica")
+				img(class="imgresponsive",src="images/logo_lr.png")
+		.menu.menu-color
+			include base/menu.pug
+
+		include mixin/relacionados-cusco.pug
+
+
+		.casos-shipibas.container-fluid
+			.container
+				h2 Martina Camala Quispe : “Me dijeron que si no me ligaban me meterían a la cárcel” 
+
+
+				.row
+					.col-lg-8.col-md-8.col-sm-8
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/KCdWdZyYKG4?rel=0&amp;showinfo=0?rel=0&autoplay=1",frameborder="0",allowfullscreen="")
+					.col-lg-4.col-md-4.col-sm-4.fichat
+						img(src="images/martinacamala-fichas.jpg" width="60%" alt="")
+						ul
+							li 
+								b Víctima: 
+								|Martina Camala Quispe
+							li 
+								b Grado de instrucción: 
+								|primero de primaria
+							li 
+								b Fecha del hecho: 
+								|1996
+							li 
+								b Modus Operandi:  
+								|Amenaza
+							li 
+								b Edad de la ligadura: 
+								|34
+							li 
+								b Vivía en: 
+								|Comunidad Chocopia, distrito Colquepata, provincia Paucartambo.
+							li 
+								b Responsables de la captación: 
+								| Posta de Colquepata 
+							li 
+								b Responsables de la ligadura: 
+								| Posta de Colquepata 
+				.row.traduccion
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_españolc4();",value="Español")
+								input(type="button",onclick="javascript:cambia_quechuac4();",value="Quechua")
+						#capa-c4
+							p Con amenazas y violencia le ligaron las trompas a la señora Martina Camala Quispe, en 1996, el año donde todo empezó. El inicio de la época del terror para las miles de mujeres esterilizadas contra su voluntad a lo largo y ancho del Perú. 
+							p En la posta de Colquepata (distrito Colquepata, provincia Paucartambo, región Cusco),lugar donde más de cuarenta señoras han narrado a La República el atropello que se cometió contra ellas, los enfermeros Alicia y Hernán le dijeron a Martina para pasar al cuartito a curarse, para que de ahora en adelante le vaya mejor en la vida.  
+							p Ella se negó hasta el cansancio. Y empezaron las amenazas. Le dijeron que si no acataba las órdenes ni ella ni sus hijos podrían volver a atenderse en la posta. Qué ella y su esposo irían a la cárcel por oponerse al mandato del gobierno.  
+							p “Entre dos me han llevado adentro. Estírate, estírate, quítate, quítate tus ropas, así me decían. Me han puesto un vestido blanco. Estírate, me decían de nuevo, te vamos a poner una inyectable (anestesia) para que no llores, asi me han dicho...un mes tenía mi bebé que estaba conmigo ese día, ellos lo estaban agarrando a mi bebé, y yo me he quedado dormida”. 
+							p Misión cumplida. Martina había ido a la posta para el control de su bebé, y la esterilizaron a la fuerza.  Hasta el día de hoy la tragedia no la deja dormir, y su esposo a raíz del hecho la maltrata como jamás lo hizo antes. 
+							p “Yo me siento mal por haberme hecho esto, maldecía mucho. Mucha preocupación tengo, para pensando en esto y de eso me paro enfermando”. 
+							p “Cuando he regresado a mi casa mi esposo con palo me ha pegado, me ha botado de la casa, me dijo: “Querías caminar con otros varones por eso te has hecho esa cosa, yo no te he dicho nada, tú tienes la culpa, tú sabrás cómo seguir adelante”, así me ha dicho”. 
+							p La República logró identificar a la enfermera de la posta de Colquepata que llevó a la señora Camala, bajo amenazas, a ligarse. Se llama Alicia Hilaria Muñoz Díaz.
+							br
+							img(id="lucia1", src="images/doc3.jpg" width="100%" alt="")
+							p “Esta es la señorita Alicia, la que me ha maltratado a mí, yo la maldigo a ella. Cuando yo le llevé a mi hijo a la posta ella me ha obligado a ligarme. Me dijo que si no me iba  a llevar a la cárcel y que El Estado nunca más va a atender a mis hijos. Por eso yo le maldigo a esta señorita para siempre, porque por culpa de ella estoy así”, dijo indignada la señora Camala.
+							br
+							img(id="lucia1", src="images/doc4.jpg" width="100%" alt="")
+							p Más de 20 señoras ligadas a la fuerza en la posta de Colquepata contaron a La República que la enfermera Alicia las captaba con engaños, amenazas y a la fuerza para que las liguen.
+							p Le mostramos su foto  a tres señoras más, y al instante la identificaron. Ellas fueron: Seferina Castro Huamán (quién denunció en 1999 ante un juez de paz en Colquepata que la habían esterilizado en contra de su voluntad, La República obtuvo el documento de la denuncia), Juliana Yapo Flores y Nelly Quispe Huisa. 
+							br
+							img(id="lucia1", src="images/doc5.jpg" width="100%" alt="")
+							p Seferina Castro Huamán. 
+							br
+							img(id="lucia1", src="images/doc6.jpg" width="100%" alt="")
+							p Juliana Yapo Flores 
+							br
+							img(id="lucia1", src="images/doc7.jpg" width="100%" alt="")
+							p Nelly Quispe Huisa 
+							p La República buscó a la enfermera Alicia, ella nos dijo: 
+							p “No las forzamos, ni con policía hemos ido, es mentira lo que dicen...Ha sido con su consentimiento de ellas, no las hemos jalado a la fuerza. Quién soy yo para amenazarles, yo qué gano con esto, no me han pagado nada, solamente han sido órdenes”.
+							p “No soy la única, están mis compañeros, nos han obligado y hemos cumplido como orden del estado...bien ha hecho el gobierno con esta campaña. Agua de chuño hervido les daban a sus hijos, los niños eran desnutridos, por eso mismo estoy de acuerdo, el gobierno ha implementado ese programa de esterilizaciones, nosotros solo hemos cumplido”.
+							
+					
+
+								
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug

@@ -1,0 +1,76 @@
+
+html
+	head
+		include base/head.pug
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+		.menu.menu-color
+			include base/menu.pug
+
+		include mixin/relacionados-cusco.pug
+
+
+		.casos-shipibas.container-fluid
+			.container
+				h2 Maximiliana Quillahuaman Quispe : “A los 25 años me hicieron esto, tenía mis bebés seguiditos” 
+
+
+				.row
+					.col-lg-8.col-md-8.col-sm-8
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/Cibem-SAS0M?rel=0&amp;showinfo=0?rel=0&autoplay=1",frameborder="0",allowfullscreen="")
+					.col-lg-4.col-md-4.col-sm-4.fichat
+						img(src="images/maximilianaquillahuaman-fichas.jpg" width="60%" alt="")
+						ul
+							li 
+								b Víctima: 
+								| Maximiliana Quillahuaman Quispe
+							li 
+								b Grado de instrucción: 
+								|primero de primaria
+							li 
+								b Fecha del hecho: 
+								|1998
+							li 
+								b Modus Operandi:  
+								|Hostigamiento 
+							li 
+								b Edad de la ligadura: 
+								|25
+							li 
+								b Vivía en: 
+								| Comunidad de Mahuaypampa, distrito Maras, provincia Urubamba.
+							li 
+								b Responsables de la captación: 
+								|Posta de Maras
+							li 
+								b Responsables de la ligadura: 
+								| MINSA de Urubamba  
+				.row.traduccion
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_españolc5();",value="Español")
+								input(type="button",onclick="javascript:cambia_quechuac5();",value="Quechua")
+						#capa-c5
+							p Maximiliana Quillahuaman Quispe dio a luz y al poco tiempo llevó a su hijo para su control a la posta de Maras (distrito Maras, provincia Urubamba, región Cusco). El maltrato no se hizo esperar ni un minuto. Cuántos hijos tienes, le preguntaron las enfermeras Blanquita y Doris. Tengo cinco. “Ya no vas a tener más hijos, la educación cuesta mucho, no estamos en tiempos  de que ustedes tengan más hijos, vas a hacerte ligar”. Maximiliana fue muy clara, les dijo con firmeza que no quería que la esterilizaran. Pero de nada sirvió.
+							p “De cualquier forma, por cualquier lado quería escaparme, al mismo tiempo cerraron la puerta, nos han agarrado duro, yo no podía escaparme. Nos han encerrado en otra sala”.
+							p Luego la subieron a una ambulancia empujándola, junto a varias señoras. En el trayecto del camino una enfermera le dijo que ellas no ligaban, que eso lo hacía personal del MINSA de Urubamba, a dónde se dirigían. 
+							p “En la sala de operación me han dicho: “tanto hijos tienes, por eso te vamos a ligar para siempre”, me han hecho mirar hacia arriba, me han hecho contar una numeración, me han amarrado mi manos, mis pies también me han amarrado”. 
+
+							p Maximiliana quería tener dos hijos más, quería ser una mujer sana, pero le malograron la vida, como ella misma relata.  
+
+								
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug
