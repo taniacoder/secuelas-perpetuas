@@ -12,10 +12,10 @@ html
 			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
+		
+		.menu
+			include base/menu.pug
 		#main
-			.menu.menu-color
-				include base/menu.pug
-
 			.colleccion.container-fluid
 				.container
 					h2 Archivos de investigaciones sobre esterilizaciones forzadas
@@ -147,6 +147,8 @@ html
 								h3 Alejandra Ballón: “Es necesaria la colaboración eficaz de médicos en crimen de esterilización” | VIDEO
 							p La antropóloga Alejandra Ballón es especialista en el tema de esterilizaciones forzadas y explica por qué el Programa de Planificación Familiar durante el gobierno de Alberto Fujimori estuvo cruel y pésimamente planteado desde un inicio, y demuestra que sí fue una política de Estado.
 							a(target="_blank",href="pdf/15.pdf") Click para edición impresa
+			include base/jalador.pug
+
 			footer
 				include base/footer.pug
 

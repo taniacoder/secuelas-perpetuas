@@ -1,5 +1,5 @@
 /*menu*/
-.menu {
+/*.menu {
     
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31,7 +31,7 @@ a:hover, a:focus {
 
 header {
 	padding: 1%;
-   /*FLEX*/
+   
    	display: flex;
    	justify-content:space-between;
    	align-items:center;
@@ -42,7 +42,7 @@ header {
 
 header nav {
 	width: 50%;
-	/*FLEX*/
+	
    	display: flex;
    	flex-wrap:wrap;
    	align-items:center;
@@ -59,7 +59,7 @@ header nav a {
 	text-align:center;
 	text-decoration: none;
 	padding: 2%;
-	   /*FLEX*/
+	   
    	flex-grow:1;
 
 }
@@ -70,5 +70,47 @@ nav {
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
     box-shadow:none;
 }
+*/
 
 /*menu*/
+/**/
+
+.navbar-default {
+    margin: 0;
+    border-radius: 0;
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 20;
+    border: 0px;
+    background-color: transparent;
+}
+.navbar-nav {
+
+    padding-top: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    letter-spacing: 4px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.9rem;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    /* padding: 2%; */
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.menu-home {
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  position: fixed;
+}
+.menu-color {
+  background-color: #9b3604;
+  background-image: none;
+  position: fixed;
+}
+.nav > li > a > img {
+    max-width: 188;
+}

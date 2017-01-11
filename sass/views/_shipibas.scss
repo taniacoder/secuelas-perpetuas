@@ -3,7 +3,9 @@
     padding: 1%;
     font-size: 15px;
 }
-
+.intro-shipibas {
+	    padding-top: 105px;
+}
 
 .row.a {
 	
@@ -78,7 +80,12 @@
 }
  }
 
-
+.fa{position: absolute;
+    top: 24%;
+    left: 44%;
+    /* right: 20%; */
+    /* bottom: 90%; */
+}
 
  /*casos*/
 
@@ -174,7 +181,7 @@ margin-top:20px;
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width : 40px;
-  margin-top: 30px
+  margin-top: 54px
 }
 /* Next button  */
 .media-carousel .carousel-control.right 
@@ -186,7 +193,7 @@ margin-top:20px;
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width : 40px;
-  margin-top: 30px
+  margin-top: 54px
 }
 /* Changes the position of the indicators */
 .media-carousel .carousel-indicators 
@@ -205,9 +212,9 @@ margin-top:20px;
 {
   background: #333333;
 }
-.media-carousel img
+/*.media-carousel img
 {
   width: 250px;
   height: 100px
-}
+}*/
 /* End carousel */

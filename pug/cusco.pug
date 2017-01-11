@@ -14,7 +14,7 @@ html
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		#main
-			.menu.menu-color
+			.menu
 				include base/menu.pug
 			section.container.intro-shipibas
 				.row
@@ -26,40 +26,46 @@ html
 
 			section.container.testimonios
 				.row.a
-					.col-lg-4.col-md-4.col-xs-12.box
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12.box
 						a.thumbnail(href='ninamamani.html')
-							img(src="images/ninamamani-link.jpg")
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+							img(src="images/ninamamani.jpg")
 							.caption
 								h3 Benedicta Nina Mamani 
 								p.info “No me han explicado de mi corte, no sabía porque tenía eso en mi cuerpo” 
-					.col-lg-4.col-md-4.col-xs-12.box
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12.box
 						a.thumbnail(href='damianahuallpayunca.html')
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
 							img(src="images/damianahuallpayunca.jpg")
 							.caption
 								h3 Damiana Huallpayunca
 								p.info “A mi esposo lo obligaron a firmar para que me liguen”   
-					.col-lg-4.col-md-4.col-xs-12.box
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12.box
 						a.thumbnail(href='ernestinamamani.html')
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
 							img(src="images/ernestinamamani.jpg")
 							.caption
 								h3 Ernestina Mamani Quispe
 								p.info “Me dieron un papel para firmar, estaba llorando, no sé leer”
 
 				.row.a
-					.col-lg-4.col-md-4.col-xs-12.box
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12.box
 						a.thumbnail(href='martinacamala.html')
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
 							img(src="images/martinacamala.jpg")
 							.caption
 								h3 Martina Camala Quispe 
 								p.info “Me dijeron que si no me ligaban me meterían a la cárcel” 
-					.col-lg-4.col-md-4.col-xs-12.box
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12.box
 						a.thumbnail(href='maximilianaquillhuaman.html')
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
 							img(src="images/maximilianaquillhuaman.jpg")
 							.caption
 								h3 Maximiliana Quillahuaman Quispe  
 								p.info “A los 25 años me hicieron esto, tenía mis bebés seguiditos” 
-					.col-lg-4.col-md-4.col-xs-12.box
+					.col-lg-4.col-md-4.col-sm-4.col-xs-12.box
 						a.thumbnail(href='victoriaccoya.html')
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
 							img(src="images/victoriaccoya.jpg")
 							.caption
 								h3 Victoria Ccoya Quispe
@@ -269,19 +275,9 @@ html
 
 							a.left.carousel-control(data-slide='prev', href='#media') ‹
 							a.right.carousel-control(data-slide='next', href='#media') ›
-			section.cuadro-jalador
-				.container
-					h2 Aquí la Investigación
-					.row
-						a.col-lg-4.col-md-4(href='shipibas.html')
-							h3 UCAYALY
-							img(src="images/ernestinamamani.jpg")
-						a.col-lg-4.col-md-4(href='cusco.html')
-							h3 CUSCO
-							img(src="images/martinacamala.jpg")
-						a.col-lg-4.col-md-4(href='investigaciones.html')
-							h3 ARCHIVOS
-							img(src="images/martinacamala.jpg")
+			
+			include base/jalador.pug
+
 
 
 			footer

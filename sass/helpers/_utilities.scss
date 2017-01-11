@@ -53,3 +53,28 @@
 .mt-4{
   margin-top: 4%;
 }
+
+.container-intro {
+    width: 900px;
+}
+
+.txt-his {
+  b{
+    font-weight: 900;
+  }
+  a {
+    font-weight: 900;
+    color: #000000;
+    :hover{
+      color: #000000;
+    }
+    :focus{
+      color: #000000;
+    }
+  }
+}
+
+.pd-105{
+  
+padding-top: 105px;
+}

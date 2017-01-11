@@ -66,11 +66,15 @@ body {
 }
 
 .title p {
-	color: white;
-	letter-spacing: 2px;
-    font-size: 2rem;
+    color: white;
+    /* letter-spacing: 1px; */
+    font-size: 20px;
     text-align: center;
-    text-shadow: 2px 2px 1px #000;
+    text-shadow: 1px 3px 3px #000;
+    /* font-weight: 700; */
+    /* font-variant: small-caps; */
+    line-height: 27px;
+    background-color: rgba(0, 0, 0, 0.39);
 }
 span.hashtag {
 	background-color: #cc7a18;
