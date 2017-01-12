@@ -57,6 +57,11 @@
 .container-intro {
     width: 900px;
 }
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
 .txt-his {
   b{
@@ -65,6 +70,7 @@
   a {
     font-weight: 900;
     color: #000000;
+    text-decoration: underline;
     :hover{
       color: #000000;
     }

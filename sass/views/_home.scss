@@ -102,6 +102,9 @@ span.hashtag {
     text-align: right;
     margin-bottom: 1%;
     color: #fff;
+    position: relative;
+    top: 400px;//eliminar para responsive//
+    margin-right: 40px;
     a {
         color: #fff;
     }
