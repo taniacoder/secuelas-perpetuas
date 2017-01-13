@@ -6157,6 +6157,9 @@ nav {
 .navbar-nav {
   padding-top: 20px; }
 
+.navbar-brand-none {
+  display: none; }
+
 .navbar-default .navbar-nav > li > a {
   letter-spacing: 4px;
   color: #e8a396;
@@ -6232,7 +6235,7 @@ body {
   transition: 0.25s ease-out height; }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(43, 8, 1, 0.24);
   position: absolute;
   top: 0;
   left: 0;
@@ -6254,7 +6257,7 @@ body {
 
 .content-logo {
   /*display:flex;*/
-  padding: 9% 0 2% 6%; }
+  padding: 9% 11% 2% 2%; }
 
 .title {
   /*position: absolute;*/
@@ -6300,8 +6303,7 @@ span.hashtag {
   margin-bottom: 1%;
   color: #fff;
   position: relative;
-  top: 400px;
-  margin-right: 40px; }
+  top: 425px; }
   .tw-meli a {
     color: #fff; }
 

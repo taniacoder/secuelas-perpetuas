@@ -39,19 +39,17 @@ $(document).ready(function() {
 
       if (scroll >= 600) {
 
-
+          $(".navbar-brand").removeClass("navbar-brand-none"); 
           // $(".nav.navbar-nav>li>a").css("color", "#fff");
           $(".menu-home").addClass("menu-color");
           $(".space").addClass("pd_80");    
         } else {
-
+          $(".navbar-brand-none").addClass("navbar-brand");
           $(".menu-home").removeClass("menu-color");  
           $(".space").removeClass("pd_80");           
         }
 
   });
-
-
 
 
 ////botones traductor
