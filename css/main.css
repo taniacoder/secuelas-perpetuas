@@ -6050,7 +6050,7 @@ button.close {
 /*footer*/
 footer {
   padding: 2% 0;
-  background: #004158;
+  background: #9b3604;
   color: white;
   text-align: left; }
   footer .img-foot-lr {
@@ -6062,7 +6062,8 @@ footer {
     border-top: 1px solid #eee; }
 
 .logofooter {
-  text-align: center; }
+  text-align: center;
+  padding-top: 40px; }
 
 .creditos h4 {
   font-size: 14px; }
