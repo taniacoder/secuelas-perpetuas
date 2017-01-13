@@ -22,12 +22,25 @@ html
 			.container
 				h2 Juliana Lomas Cauper : “Apagaron la luz, me pusieron una inyección y grité. No sabía que me hacían” 
 				.row
-					.col-lg-8.col-md-8.col-sm-8
+					.col-lg-9.col-md-9.col-sm-12
 						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/fmWJ75av7PE?&autoplay=1&showinfo=0&fs=0&rel=0;",frameborder="0",allowfullscreen="",autoplay)
-					.col-lg-4.col-md-4.col-sm-4.fichat
-						.thumbnail(href='#')
+						.traduccion
+						br
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_español1();",value="Español")
+								input(type="button",onclick="javascript:cambia_shipibo1();",value="Shipibo")
+						#capa-1
+							p A la shipiba Juliana Lomas Cauper la ligaron contra su voluntad en el año 1997, año dónde las esterilizaciones compulsivas cobraron su mayor número de víctimas. 
+							p “El enfermero Domingo Sánchez me buscó, no sabía nada. Me dijo que fuera para que me dieran ropa, dinero. Me ha dicho para ir al Centro de Salud Iparía (distrito Iparía, provincia Coronel Portillo, Región Pucallpa), y ahí me abandonó”. 
+							p Habían pasado varias horas, Virginia tenía hambre. En el centro nadie le decía nada, ella preguntaba pero el silencio le respondía. Seguían pasando las horas hasta que dos enfermeros la hicieron pasar a una sala, Virginia sentía desconfianza.
+							p “Me dijeron que pase no más, que no iba a pasar nada. Yo no quería, empecé a temblar. Una trabajadora me agarró de los brazos, yo hacía fuerza, me pusieron una inyección (anestesia)”.  
+							p “Apagaron la luz, prendieron una más pequeña, temblaba...No sabía que me hacían. Me iba quedando como adormecida” 
+							p Cuando despertó Virginia estaba en otra sala, sola, sangrando, con muchas preguntas en su cabeza. En el Centro de Salud de Iparía nadie le dijo que la habían ligado, recién en su comunidad se enteró el motivo de su sangre”. 
+
+					.col-lg-3.col-md-3.col-sm-12.fichat
 							img(src="images/julianalomas-ficha.jpg" )
-							.caption.caption-casos
+							div
 								ul
 									li 
 										b Víctima: 
@@ -53,19 +66,6 @@ html
 									li 
 										b Responsables de la ligadura: 
 										|Centro de Salud de Iparía
-				.row.traduccion
-					.col-lg-8
-						h4 LEALO EN 
-							span#botones
-								input(type="button",onclick="javascript:cambia_español1();",value="Español")
-								input(type="button",onclick="javascript:cambia_shipibo1();",value="Shipibo")
-						#capa-1
-							p A la shipiba Juliana Lomas Cauper la ligaron contra su voluntad en el año 1997, año dónde las esterilizaciones compulsivas cobraron su mayor número de víctimas. 
-							p “El enfermero Domingo Sánchez me buscó, no sabía nada. Me dijo que fuera para que me dieran ropa, dinero. Me ha dicho para ir al Centro de Salud Iparía (distrito Iparía, provincia Coronel Portillo, Región Pucallpa), y ahí me abandonó”. 
-							p Habían pasado varias horas, Virginia tenía hambre. En el centro nadie le decía nada, ella preguntaba pero el silencio le respondía. Seguían pasando las horas hasta que dos enfermeros la hicieron pasar a una sala, Virginia sentía desconfianza.
-							p “Me dijeron que pase no más, que no iba a pasar nada. Yo no quería, empecé a temblar. Una trabajadora me agarró de los brazos, yo hacía fuerza, me pusieron una inyección (anestesia)”.  
-							p “Apagaron la luz, prendieron una más pequeña, temblaba...No sabía que me hacían. Me iba quedando como adormecida” 
-							p Cuando despertó Virginia estaba en otra sala, sola, sangrando, con muchas preguntas en su cabeza. En el Centro de Salud de Iparía nadie le dijo que la habían ligado, recién en su comunidad se enteró el motivo de su sangre”. 
 							
 		include base/jalador.pug					
 

@@ -54,7 +54,6 @@ $(document).ready(function() {
 
 
 
-
 ////botones traductor
 function cambia_shipibo(){
    var elemento = document.getElementById("capa"); 
