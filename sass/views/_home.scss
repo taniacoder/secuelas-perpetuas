@@ -27,7 +27,7 @@ body {
     transition: 0.25s ease-out height;
 }
 .hero-overlay {
-	background: rgba(43, 8, 1, 0.24);
+	background: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -74,7 +74,7 @@ body {
     /* font-weight: 700; */
     /* font-variant: small-caps; */
     line-height: 27px;
-    background-color: rgba(0, 0, 0, 0.39);
+    /*background-color: rgba(0, 0, 0, 0.39);*/
 }
 span.hashtag {
 	background-color: #cc7a18;
@@ -98,12 +98,9 @@ span.hashtag {
 }
 
 .tw-meli {
-    text-shadow: 2px 2px 1px #000;
-    text-align: right;
-    margin-bottom: 1%;
+    text-align: left;
+    margin-top: 40px;
     color: #fff;
-    position: relative;
-    top: 425px;//eliminar para responsive//
     a {
         color: #fff;
     }
@@ -164,41 +161,7 @@ span.hashtag {
     transform: translate(-50%, -35%) scale(1.025);
 	}
 }
-@media screen and (max-width: 500px) {
-    .imgresponsive {
-        width: 80%;
-    }
-    .fa-5x {
-        font-size: 3em!important;
-    }
-    .bg-video video {
 
-    height: auto;
-    -webkit-transform: translate(-50%, -30%) scale(1.025);
-    -ms-transform: translate(-50%, -30%) scale(1.025);
-    transform: translate(-50%, -30%) scale(1.025);
-    }
-	header {
-   	flex-direction:column; 
-	}
-	header nav {
-	flex-direction:column; 
-	}
-	.title {
-    position: relative;
-    text-align: center;
-	}
-	h1 img {
-		width: 70%;
-	}
-    .title p {
-    font-size: 1.5rem;
-    }
-    span.hashtag {
-    font-size: 1.6rem;
-    }
-
-}
 .section1 .parallax{
   position: fixed;
 }
@@ -208,7 +171,7 @@ span.hashtag {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("images/Secuencia 01_5.mp4");
+  /*background: url("images/Secuencia 01_5.mp4");
     right: 0px;
     /*min-height: 100%;*/
     width: 100%;
@@ -222,7 +185,7 @@ span.hashtag {
 }
 
 .parallax-container {
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
     height: 500px;
 }
@@ -240,7 +203,118 @@ span.hashtag {
 }
 
 .parallax-container {
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
     height: 720px;
+}
+
+/*scroll*/
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.arrow {
+  position: absolute;
+  top: 590px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+/*   background-image: url(); */
+/*   background-size: contain; */
+} 
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+i {
+  display: block;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 500px) {
+    .imgresponsive {
+        width: 80%;
+    }
+    .fa-5x {
+        font-size: 3em!important;
+    }
+    .bg-video video {
+
+    height: auto;
+    -webkit-transform: translate(-50%, -30%) scale(1.025);
+    -ms-transform: translate(-50%, -30%) scale(1.025);
+    transform: translate(-50%, -30%) scale(1.025);
+    }
+    header {
+    flex-direction:column; 
+    }
+    header nav {
+    flex-direction:column; 
+    }
+    .title {
+    position: relative;
+    text-align: center;
+    }
+    h1 img {
+        width: 70%;
+    }
+    .title p {
+    font-size: 1.6rem;
+    }
+    span.hashtag {
+    font-size: 1.6rem;
+    }
+
+   .hero-overlay {
+    background-image: url("/usuarios/tcuya/Desktop/cambios sp/force/static/images/fondo_responsive.jpg");
+    }
+
 }

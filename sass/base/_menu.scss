@@ -85,7 +85,7 @@ nav {
     background-color: transparent;
 }
 .navbar-nav {
-
+    padding-left: 2%;
     padding-top: 20px;
 }
 .navbar-brand-none{
@@ -134,4 +134,13 @@ nav {
 }
 .nav > li > a > img {
     max-width: 188;
+}
+@media screen and (max-width: 500px) {
+  .menu-home {
+    background-color: #9b3604;
+    background-image: none;
+  }
+  .navbar-brand > img {
+    width: 200px;
+  }
 }

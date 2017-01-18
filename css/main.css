@@ -6160,6 +6160,7 @@ nav {
   background-color: transparent; }
 
 .navbar-nav {
+  padding-left: 2%;
   padding-top: 20px; }
 
 .navbar-brand-none {
@@ -6203,6 +6204,13 @@ nav {
 .nav > li > a > img {
   max-width: 188; }
 
+@media screen and (max-width: 500px) {
+  .menu-home {
+    background-color: #9b3604;
+    background-image: none; }
+  .navbar-brand > img {
+    width: 200px; } }
+
 .colleccion {
   padding-top: 105px; }
 
@@ -6240,7 +6248,7 @@ body {
   transition: 0.25s ease-out height; }
 
 .hero-overlay {
-  background: rgba(43, 8, 1, 0.24);
+  background: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -6283,7 +6291,7 @@ body {
   /* font-weight: 700; */
   /* font-variant: small-caps; */
   line-height: 27px;
-  background-color: rgba(0, 0, 0, 0.39); }
+  /*background-color: rgba(0, 0, 0, 0.39);*/ }
 
 span.hashtag {
   background-color: #cc7a18;
@@ -6303,12 +6311,9 @@ span.hashtag {
   top: 0; }
 
 .tw-meli {
-  text-shadow: 2px 2px 1px #000;
-  text-align: right;
-  margin-bottom: 1%;
-  color: #fff;
-  position: relative;
-  top: 425px; }
+  text-align: left;
+  margin-top: 40px;
+  color: #fff; }
   .tw-meli a {
     color: #fff; }
 
@@ -6348,6 +6353,90 @@ span.hashtag {
     -webkit-transform: translate(-50%, -35%) scale(1.025);
     transform: translate(-50%, -35%) scale(1.025); } }
 
+.section1 .parallax {
+  position: fixed; }
+
+#video_background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: url("images/Secuencia 01_5.mp4");
+    right: 0px;
+    /*min-height: 100%;*/
+  width: 100%;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden; }
+
+.intro {
+  padding: 5% 0;
+  background-color: white; }
+
+.parallax-container {
+  /*position: relative;*/
+  overflow: hidden;
+  height: 500px; }
+
+.section1 .parallax {
+  position: fixed; }
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.parallax-container {
+  /*position: relative;*/
+  overflow: hidden;
+  height: 720px; }
+
+/*scroll*/
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+.arrow {
+  position: absolute;
+  top: 590px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px;
+  /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */ }
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+i {
+  display: block;
+  color: #fff; }
+
 @media screen and (max-width: 500px) {
   .imgresponsive {
     width: 80%; }
@@ -6373,49 +6462,11 @@ span.hashtag {
   h1 img {
     width: 70%; }
   .title p {
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   span.hashtag {
-    font-size: 1.6rem; } }
-
-.section1 .parallax {
-  position: fixed; }
-
-#video_background {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: url("images/Secuencia 01_5.mp4");
-  right: 0px;
-  /*min-height: 100%;*/
-  width: 100%;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden; }
-
-.intro {
-  padding: 5% 0;
-  background-color: white; }
-
-.parallax-container {
-  position: relative;
-  overflow: hidden;
-  height: 500px; }
-
-.section1 .parallax {
-  position: fixed; }
-
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1; }
-
-.parallax-container {
-  position: relative;
-  overflow: hidden;
-  height: 720px; }
+    font-size: 1.6rem; }
+  .hero-overlay {
+    background-image: url("/usuarios/tcuya/Desktop/cambios sp/force/static/images/fondo_responsive.jpg"); } }
 
 .txt-intro-shipibas {
   text-align: center;

@@ -1,3 +1,17 @@
+//scrol//
+
+
+ $(window).scroll(function(){
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
+  //250 is fade pixels
+  });
+
+$(document).ready(function() {
+    $(".smoothScroll").click(function(event){
+        $('html, body').animate({scrollTop: '+=675px'}, 800);
+    });
+});
+
 
 //slider//
 jQuery(document).ready(function($) {
