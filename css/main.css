@@ -6160,7 +6160,7 @@ nav {
   background-color: transparent; }
 
 .navbar-nav {
-  padding-left: 2%;
+  padding-left: 9%;
   padding-top: 20px; }
 
 .navbar-brand-none {
@@ -6419,7 +6419,7 @@ span.hashtag {
 
 .arrow {
   position: absolute;
-  top: 590px;
+  top: 540px;
   bottom: 0;
   left: 50%;
   margin-left: -20px;
