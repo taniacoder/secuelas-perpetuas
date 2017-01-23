@@ -163,7 +163,7 @@ span.hashtag {
 }
 
 .section1 .parallax{
-  position: fixed;
+  /*position: fixed;*/
 }
 
 
@@ -191,7 +191,7 @@ span.hashtag {
 }
 
 .section1 .parallax {
-    position: fixed;
+   /* position: fixed;*/
 }
 .parallax {
     position: absolute;
@@ -259,7 +259,7 @@ span.hashtag {
 }
 .arrow {
   position: absolute;
-  top: 540px;
+  top: 459px;
   bottom: 0;
   left: 50%;
   margin-left: -20px;
@@ -315,6 +315,9 @@ i {
 
    .hero-overlay {
     background-image: url("/usuarios/tcuya/Desktop/cambios sp/force/static/images/fondo_responsive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     }
+
 
 }

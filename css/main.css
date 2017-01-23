@@ -5981,6 +5981,8 @@ button.close {
 
 @media screen and (max-width: 700px) {
   .info {
+    display: none; }
+  .display-responsive {
     display: none; } }
 
 @media screen and (max-width: 1600px) {
@@ -6354,7 +6356,7 @@ span.hashtag {
     transform: translate(-50%, -35%) scale(1.025); } }
 
 .section1 .parallax {
-  position: fixed; }
+  /*position: fixed;*/ }
 
 #video_background {
   background-position: center;
@@ -6378,7 +6380,7 @@ span.hashtag {
   height: 500px; }
 
 .section1 .parallax {
-  position: fixed; }
+  /* position: fixed;*/ }
 
 .parallax {
   position: absolute;
@@ -6419,7 +6421,7 @@ span.hashtag {
 
 .arrow {
   position: absolute;
-  top: 540px;
+  top: 459px;
   bottom: 0;
   left: 50%;
   margin-left: -20px;
@@ -6466,7 +6468,9 @@ i {
   span.hashtag {
     font-size: 1.6rem; }
   .hero-overlay {
-    background-image: url("/usuarios/tcuya/Desktop/cambios sp/force/static/images/fondo_responsive.jpg"); } }
+    background-image: url("/usuarios/tcuya/Desktop/cambios sp/force/static/images/fondo_responsive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 .txt-intro-shipibas {
   text-align: center;
