@@ -17,7 +17,7 @@ $(document).ready(function() {
 jQuery(document).ready(function($) {
  
         $('#myCarousel').carousel({
-                interval: 23050
+                interval: 22000
         });
  
         $('#carousel-text').html($('#slide-content-0').html());
