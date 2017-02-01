@@ -1,11 +1,4 @@
-/*.la-republica {
-    background-color: #013f6d;
-    background-color: #004158;
-    padding: 0.5%;
-    a{
-    	text-align: center;
-    }
-}*/
+
 
 .fixed-header {
   position: fixed;
@@ -13,12 +6,27 @@
   width: 100%; 
 }
 /////////////////**//
-
-
-#main, {
-    width: 100%;
-    height: 100%;
+.txt-his{
+	font-size: 17px;
 }
+p {
+	
+  b{
+    font-weight: 900;
+  }
+  a {
+    font-weight: 900;
+    color: #000000;
+    text-decoration: underline;
+    :hover{
+      color: #000000;
+    }
+    :focus{
+      color: #000000;
+    }
+  }
+}
+
 /*.box {
 	position: realtive;
 	.hero-overlay2 {
@@ -94,7 +102,7 @@
  /*casos*/
 
 .casos-shipibas{
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 	h2 {
 		font-weight: 700;
 		margin: 3% 0 2%;

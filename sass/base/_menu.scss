@@ -80,22 +80,24 @@ nav {
     border-radius: 0;
     /*position: fixed;*/
     width: 100%;
-    z-index: 20;
+    z-index: 10000;
     border: 0px;
     background-color: transparent;
 }
 .navbar-nav {
-    padding-left: 9%;
+    /*padding-left: 9%;*/
     padding-top: 20px;
 }
 .navbar-brand-none{
-  display: none;
+  visibility: collapse;
 }
-
+.navbar-brand {
+  visibility: inherit;
+}
 
 .navbar-default .navbar-nav>li>a {
     letter-spacing: 4px;
-    color: #e8a396;
+    color: #fff;
     font-weight: 600;
     font-size: 1.9rem;
     font-family: 'Cabin', sans-serif;
@@ -109,19 +111,19 @@ nav {
 .navbar-default .navbar-nav{
     li {
       a:hover  {
-      color: #fff;
+      color: #e8a396;
       background-color: transparent;        
       }
       a:focus {
-       color: #fff;
+       color: #e8a396;
       }
       a:active {
-       color: #fff;
+       color: #e8a396;
       }
     }
   } 
   .navbar-default .navbar-nav li a:active {
-    color: #fff;
+    color: #e8a396;
 }
 .menu-home {
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
@@ -143,4 +145,16 @@ nav {
   .navbar-brand > img {
     width: 200px;
   }
+}
+@media screen and (min-width: 940px) {
+  .menu-xs {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 940px) {
+  .menu-md {
+    display: none;
+  }
+  
 }

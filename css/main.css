@@ -5834,38 +5834,39 @@ button.close {
   max-width: 900px;
   margin: 0 auto; }
 
-.txt-his b {
-  font-weight: 900; }
-
-.txt-his a {
-  font-weight: 900;
-  color: #000000;
-  text-decoration: underline; }
-  .txt-his a :hover {
-    color: #000000; }
-  .txt-his a :focus {
-    color: #000000; }
-
 .pd-105 {
   padding-top: 105px; }
 
-/*.la-republica {
-    background-color: #013f6d;
-    background-color: #004158;
-    padding: 0.5%;
-    a{
-    	text-align: center;
-    }
-}*/
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .fixed-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%; }
 
-#main {
-  width: 100%;
-  height: 100%; }
+.txt-his {
+  font-size: 17px; }
+
+p b {
+  font-weight: 900; }
+
+p a {
+  font-weight: 900;
+  color: #000000;
+  text-decoration: underline; }
+  p a :hover {
+    color: #000000; }
+  p a :focus {
+    color: #000000; }
 
 /*.box {
 	position: realtive;
@@ -5933,7 +5934,7 @@ button.close {
 
 /*casos*/
 .casos-shipibas {
-  margin-bottom: 5%; }
+  margin-bottom: 2%; }
   .casos-shipibas h2 {
     font-weight: 700;
     margin: 3% 0 2%; }
@@ -6157,20 +6158,23 @@ nav {
   border-radius: 0;
   /*position: fixed;*/
   width: 100%;
-  z-index: 20;
+  z-index: 10000;
   border: 0px;
   background-color: transparent; }
 
 .navbar-nav {
-  padding-left: 9%;
+  /*padding-left: 9%;*/
   padding-top: 20px; }
 
 .navbar-brand-none {
-  display: none; }
+  visibility: collapse; }
+
+.navbar-brand {
+  visibility: inherit; }
 
 .navbar-default .navbar-nav > li > a {
   letter-spacing: 4px;
-  color: #e8a396;
+  color: #fff;
   font-weight: 600;
   font-size: 1.9rem;
   font-family: 'Cabin', sans-serif;
@@ -6182,17 +6186,17 @@ nav {
   flex-grow: 1; }
 
 .navbar-default .navbar-nav li a:hover {
-  color: #fff;
+  color: #e8a396;
   background-color: transparent; }
 
 .navbar-default .navbar-nav li a:focus {
-  color: #fff; }
+  color: #e8a396; }
 
 .navbar-default .navbar-nav li a:active {
-  color: #fff; }
+  color: #e8a396; }
 
 .navbar-default .navbar-nav li a:active {
-  color: #fff; }
+  color: #e8a396; }
 
 .menu-home {
   background-image: -webkit-linear-gradient(90deg, transparent 0%, #000 100%);
@@ -6213,6 +6217,14 @@ nav {
   .navbar-brand > img {
     width: 200px; } }
 
+@media screen and (min-width: 940px) {
+  .menu-xs {
+    display: none; } }
+
+@media screen and (max-width: 940px) {
+  .menu-md {
+    display: none; } }
+
 .colleccion {
   padding-top: 105px; }
 
@@ -6230,46 +6242,83 @@ nav {
 body {
   font-family: "Roboto Slab"; }
 
-/*botones redes*/
-.share-buttons-square {
-  margin-top: 1%; }
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative; }
 
-.fb_iframe_widget_fluid {
-  display: inline-block; }
+.no-video .video-container video,
+.touch .video-container video {
+  display: none; }
 
-/**/
-.bg-video div.contenedor {
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important; }
+
+.video-container {
   position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
   width: 100%;
-  height: 90%;
-  -webkit-transition: 0.25s ease-out height;
-  transition: 0.25s ease-out height; }
+  overflow: hidden;
+  background: #000; }
 
-.hero-overlay {
-  background: none;
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute; }
+
+.video-container .filter {
+  z-index: 100;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%; }
+
+.video-container .title-container {
+  z-index: 1000;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 21%;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle; }
+
+.flecha-container {
+  z-index: 1000;
+  position: absolute;
+  top: 67%;
+  width: 100%;
+  text-align: center;
+  color: #fff; }
+
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto; }
+
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff; }
+
+.video-container .link a {
+  color: #fff; }
+
+.video-container video {
+  /*position: absolute;*/
+  z-index: 0;
   bottom: 0; }
 
-.bg-video video {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  right: 0;
-  bottom: 0;
-  /*min-height: 100%;*/
-  min-width: 100%;
-  width: auto;
-  height: auto;
-  -webkit-transform: translate(-50%, -30%) scale(1.025);
-  transform: translate(-50%, -30%) scale(1.025); }
+.video-container video.fillWidth {
+  width: 100%; }
 
+/*//*/
 .content-logo {
   /*display:flex;*/
   padding: 9% 11% 2% 2%; }
@@ -6313,87 +6362,10 @@ span.hashtag {
   top: 0; }
 
 .tw-meli {
-  text-align: left;
   margin-top: 40px;
   color: #fff; }
   .tw-meli a {
     color: #fff; }
-
-/*media*/
-@media screen and (max-width: 2218px) {
-  .bg-video video {
-    -webkit-transform: translate(-50%, -31%) scale(1.025);
-    transform: translate(-50%, -31%) scale(1.025); } }
-
-@media screen and (max-width: 1700px) {
-  .bg-video video {
-    -webkit-transform: translate(-50%, -32%) scale(1.025);
-    transform: translate(-50%, -32%) scale(1.025); } }
-
-@media screen and (max-width: 1500px) {
-  .bg-video video {
-    height: auto;
-    -webkit-transform: translate(-50%, -39%) scale(1.025);
-    transform: translate(-50%, -39%) scale(1.025); } }
-
-@media screen and (max-width: 900px) {
-  .bg-video video {
-    height: auto;
-    -webkit-transform: translate(-50%, -35%) scale(1.025);
-    transform: translate(-50%, -35%) scale(1.025); } }
-
-@media screen and (max-width: 800px) {
-  header nav {
-    width: 100%; }
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .bg-video video {
-    height: auto;
-    -webkit-transform: translate(-50%, -35%) scale(1.025);
-    transform: translate(-50%, -35%) scale(1.025); } }
-
-.section1 .parallax {
-  /*position: fixed;*/ }
-
-#video_background {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background: url("images/Secuencia 01_5.mp4");
-    right: 0px;
-    /*min-height: 100%;*/
-  width: 100%;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden; }
-
-.intro {
-  padding: 5% 0;
-  background-color: white; }
-
-.parallax-container {
-  /*position: relative;*/
-  overflow: hidden;
-  height: 500px; }
-
-.section1 .parallax {
-  /* position: fixed;*/ }
-
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1; }
-
-.parallax-container {
-  /*position: relative;*/
-  overflow: hidden;
-  height: 720px; }
 
 /*scroll*/
 
@@ -6420,16 +6392,16 @@ span.hashtag {
     transform: translateY(-15px); } }
 
 .arrow {
+  z-index: 1000;
   position: absolute;
-  top: 459px;
-  bottom: 0;
+  /* top: 459px; */
+  bottom: 10px;
   left: 50%;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   width: 40px;
   height: 60px;
-  /*change with size of arrow to make sit on bottom */
-  /*   background-image: url(); */
-  /*   background-size: contain; */ }
+  /* background-image: url(); */
+  /* background-size: contain; */ }
 
 .bounce {
   -webkit-animation: bounce 2s infinite;
@@ -6438,39 +6410,6 @@ span.hashtag {
 i {
   display: block;
   color: #fff; }
-
-@media screen and (max-width: 500px) {
-  .imgresponsive {
-    width: 80%; }
-  .fa-5x {
-    font-size: 3em !important; }
-  .bg-video video {
-    height: auto;
-    -webkit-transform: translate(-50%, -30%) scale(1.025);
-    transform: translate(-50%, -30%) scale(1.025); }
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  header nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .title {
-    position: relative;
-    text-align: center; }
-  h1 img {
-    width: 70%; }
-  .title p {
-    font-size: 1.6rem; }
-  span.hashtag {
-    font-size: 1.6rem; }
-  .hero-overlay {
-    background-image: url("/usuarios/tcuya/Desktop/cambios sp/force/static/images/fondo_responsive.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; } }
 
 .txt-intro-shipibas {
   text-align: center;

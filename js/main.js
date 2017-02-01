@@ -1,3 +1,4 @@
+
 //scrol//
 
 
@@ -11,6 +12,75 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: '+=675px'}, 800);
     });
 });
+
+
+
+
+/** Document Ready Functions **/
+/********************************************************************/
+
+
+
+/** Reusable Functions **/
+/********************************************************************/
+
+function scaleVideoContainer() {
+
+  var height = $(window).height();
+  var unitHeight = parseInt(height) + 'px';
+  $('.homepage-hero-module').css('height', unitHeight);
+
+}
+
+function initBannerVideoSize(element) {
+
+  $(element).each(function() {
+    $(this).data('height', $(this).height());
+    $(this).data('width', $(this).width());
+  });
+
+  scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element) {
+
+  var windowWidth = $(window).width(),
+    windowHeight = $(window).height(),
+    videoWidth,
+    videoHeight;
+
+  console.log(windowHeight);
+
+  $(element).each(function() {
+    var videoAspectRatio = $(this).data('height') / $(this).data('width'),
+      windowAspectRatio = windowHeight / windowWidth;
+
+    if (videoAspectRatio > windowAspectRatio) {
+      videoWidth = windowWidth;
+      videoHeight = videoWidth * videoAspectRatio;
+      $(this).css({
+        'top': -(videoHeight - windowHeight) / 2 + 'px',
+        'margin-left': 0
+      });
+    } else {
+      videoHeight = windowHeight;
+      videoWidth = videoHeight / videoAspectRatio;
+      $(this).css({
+        'margin-top': 0,
+        'margin-left': -(videoWidth - windowWidth) / 2 + 'px'
+      });
+    }
+
+    $(this).width(videoWidth).height(videoHeight);
+
+    $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+
+  });
+}
+
+
 
 
 //slider//
@@ -53,12 +123,12 @@ $(document).ready(function() {
 
       if (scroll >= 600) {
 
-          $(".navbar-brand").removeClass("navbar-brand-none"); 
+          $(".navbar-brand-none").addClass("navbar-brand"); 
           // $(".nav.navbar-nav>li>a").css("color", "#fff");
           $(".menu-home").addClass("menu-color");
           $(".space").addClass("pd_80");    
         } else {
-          $(".navbar-brand-none").addClass("navbar-brand");
+          $(".navbar-brand-none").removeClass("navbar-brand");
           $(".menu-home").removeClass("menu-color");  
           $(".space").removeClass("pd_80");           
         }
@@ -73,7 +143,7 @@ function cambia_shipibo(){
 }
 function cambia_español(){
    var elemento = document.getElementById("capa"); 
-   elemento.innerHTML = "<p>Dina Pangosa Vásquez fue vilmente engañada por los enfermeros del puesto de salud Santa Rosa (distrito Masisea, provincia Coronel Portillo, región Pucallpa). La subieron a un bote para llevarla al Centro de Salud de Masisea con la promesa de brindarle un chequeo médico. Dina, su amiga shipiba Gloria, y dos señoras mestizas (no shipibas) navegaron a través del río Pashitea con dirección al encuentro con sus verdugos.</p><p>Sacaron la lista de Masisea, y las empezaron a llamar una a una por su nombre para pasar a una sala.</p><p>“Me dijeron que me eche en la camilla, yo me eché porque pensé que era para la consulta. Me pusieron una inyección sin decirme nada, nadie me explicó lo que me iban a hacer, empecé a sentirme adormecida”.</p><p>Cuando Dina despertó luego de la anestesia, ya estaba esterilizada. No podía caminar, le dolía mucho el cuerpo, no sabía por qué tenía un corte. Un enfermero de forma muy tranquila le dijo que la habían ligado para no tener más hijos, y le recomendó cuidarse bien hasta que sane la herida.</p><p>“Yo misma no he ido al centro de salud, a mí me han llevado...yo no sé nada, no sé cómo hacer, quiero justicia, ellos son los culpables”.</p>"; 
+   elemento.innerHTML = '<br><p class="txt-his"> Dina Pangosa Vásquez fue <a target="_blank" href="http://larepublica.pe/06-11-2013/mas-de-200-mujeres-contaron-a-fiscal-como-fujimorismo-las-engano-para-esterilizarlas">engañada por los enfermeros </a>del puesto de salud Santa Rosa (distrito Masisea, provincia Coronel Portillo, Ucayali). La subieron a un bote para llevarla al <b>Centro de Salud de Masisea </b>con la promesa de brindarle un chequeo médico.</p><p class="txt-his"> Junto con su amiga shipiba Gloria, y dos señoras más, <b>navegaron a través del río Pashitea con dirección al encuentro con sus verdugos.</b></p><p class="txt-his"> En el centro de salud los enfermeros sacaron una lista, y <b>las empezaron a llamar una a una por su nombre para que pasen a una sala.</b></p><p class="txt-his"> “Me dijeron que me eche en la camilla, yo me eché porque pensé que era para la consulta. <b>Me pusieron una inyección (anestesia) sin decirme nada...</b>nadie me explicó lo que me iban a hacer, empecé a sentirme adormecida”, relata Dina Pangosa. </p><p class="txt-his"> Cuando despertó, ya estaba <a target="_blank" href="http://larepublica.pe/impresa/politica/709900-alejandro-aguinaga-admite-esterilizaciones-forzadas-pero-solo-en-34-casos">esterilizada </a>No podía caminar, le dolía mucho el cuerpo, <b>no sabía por qué tenía un corte. </b>Un enfermero, de manera muy tranquila,le dijo que la habían ligado para no tener más hijos, y le recomendó cuidarse bien hasta que sane su herida.</p><p class="txt-his"> “Si hubiera sabido no hubiera ido (al Centro de Salud Masisea), a mí me han llevado...quiero justicia, a mí me han llevado, ellos son los culpables”.</p>';
 }
 
 function cambia_shipibo1(){
@@ -82,7 +152,7 @@ function cambia_shipibo1(){
 }
 function cambia_español1(){
    var elemento = document.getElementById("capa-1"); 
-   elemento.innerHTML = "<p>A la shipiba Juliana Lomas Cauper la ligaron contra su voluntad en el año 1997, año dónde las esterilizaciones compulsivas cobraron su mayor número de víctimas.</p><p>“El enfermero Domingo Sánchez me buscó, no sabía nada. Me dijo que fuera para que me dieran ropa, dinero. Me ha dicho para ir al Centro de Salud Iparía (distrito Iparía, provincia Coronel Portillo, Región Pucallpa), y ahí me abandonó”</p><p>Habían pasado varias horas, Virginia tenía hambre. En el centro nadie le decía nada, ella preguntaba pero el silencio le respondía. Seguían pasando las horas hasta que dos enfermeros la hicieron pasar a una sala, Virginia sentía desconfianza.</p><p>“Me dijeron que pase no más, que no iba a pasar nada. Yo no quería, empecé a temblar. Una trabajadora me agarró de los brazos, yo hacía fuerza, me pusieron una inyección (anestesia)”.</p><p>“Apagaron la luz, prendieron una más pequeña, temblaba...No sabía que me hacían. Me iba quedando como adormecida”</p><p>“Apagaron la luz, prendieron una más pequeña, temblaba,  estaba semi dormida, como semi muerta. ¿Para qué me hacían esto?, preguntaba, me preguntaba. Y hasta ahí no más me recuerdo”.</p><p>Cuando despertó Virginia estaba en otra sala, sola, sangrando, con muchas preguntas en su cabeza. En el Centro de Salud de Iparía nadie le dijo que la habían ligado, recién en su comunidad se enteró el motivo de su sangre.</p>"; 
+   elemento.innerHTML = '<br><p class="txt-his"> A la shipiba Juliana Lomas Cauper la ligaron contra su voluntad en el año 1997, año dónde las esterilizaciones forzadas cobraron su mayor número de<a target="_blank" href="http://larepublica.pe/impresa/politica/772089-denuncian-intimidacion-victimas-de-esterilizaciones-forzadas-de-distrito-de-anta">víctimas </a></p><p class="txt-his"> “El enfermero Domingo Sánchez me buscó (en su casa), no sabía nada. <b>Me dijo que fuera para que me dieran ropa, víveres y dinero. </b>Me ha dicho para ir al <b>Centro de Salud Iparía (distrito Iparía, provincia Coronel Portillo, Ucayali), y ahí me abandonó”.</b></p><p class="txt-his"> Habían pasado varias horas, tenía hambre. En el centro nadie le decía nada, ella preguntaba pero el silencio le respondía. Seguían pasando las horas hasta que dos enfermeros la hicieron pasar a un pequeño cuarto. Juliana Lomas <b>sintió desconfianza.</b></p><p class="txt-his">“Me dijeron para pasar a una sala, que todo estaría bien, me echaron en la camilla...Cuando yo no quería echarme,<a target="_blank" href="http://larepublica.pe/impresa/en-portada/745992-me-ataron-las-munecas-en-la-camilla-para-esterilizarme-la-fuerza">a la fuerza me hicieron echar</a>, y grité fuerte”.</p><p class="txt-his"><b>“Apagaron la luz, </b>me pusieron una inyección (anestesia), yo temblaba, <b>grité, no sabía que me hacían, </b>me iba sintiendo como adormecida”. </p><p class="txt-his">Cuando Juliana Lomas despertó estaba en otra sala, sola, sangrando, con muchas preguntas en su cabeza. En el Centro de Salud de Iparía <b>nadie le dijo que la habían ligado, recién en su comunidad se enteró </b>el motivo de su sangre”. </p>';
 }
 
 
@@ -93,7 +163,7 @@ function cambia_shipibo2(){
 }
 function cambia_español2(){
    var elemento = document.getElementById("capa-2"); 
-   elemento.innerHTML = "<p>La señora Lidia Rodríguez Gonzáles fue por medicamentos para tratar su hemorragia a la posta de San Francisco (distrito Yarinacocha, provincia Coronel Portillo, región Pucallpa), la más cercana a su comunidad en Santa Clara. Allí le dijeron que no tenían medicina pero que la llevaban a la ciudad de Pucallpa, al Hospital Amazónico, porque ahí con toda seguridad la ayudarían.</p><p>En el trayecto del camino Lidia jamás imaginó que ella sería una víctima más del Programa de Control Natal maquinado por el gobierno de Alberto Fujimori.</p><p>“Me pusieron en la camilla sin decir nada, me ataron manos y pies para que no me moviera, no entendía bien para que me hacían todo eso, pero pensé que tal vez me hacían eso para curarme la hemorragia”.</p><p>Al despertarse la señora Lidia Rodríguez les reclamó a las enfermeras. Le dijeron:“¿Por qué tanta pregunta?, ya te explicamos, muchos hijos tienes”.</p><p>La obligaron a firmar un papel que nunca leyó, que nunca le leyeron, estando en la cama con mucho dolor: “¡¡firma, firma, firma de una vez!!”, le exigían, la obligaban molestas las enfermeras.</p><p>Después de la esterilización la señora Rodríguez tuvo relaciones sexuales a los cuatro meses, pero le dolía y no sentía deseo. Probó nuevamente un año más tarde, pero era lo mismo. Nunca más volvió a tener sexo.</p><p>A su mamá, la señora Dorotea Gonzáles Valle, también la esterilizaron años atrás en el Hospital Amazónico. Su historia clínica, conseguida por La República, no registra ningún documento en el cual ella autorice que le liguen las trompas.</p>"; 
+   elemento.innerHTML = '<br><p class="txt-his"> Lidia Rodríguez Gonzáles fue por medicamentos para tratar su hemorragia a la posta de San Francisco (distrito Yarinacocha, provincia Coronel Portillo, Ucayali), la más cercana a su comunidad en Santa Clara. </p><p class="txt-his">Allí le dijeron que no tenían medicina, pero que la llevarían <b>a la ciudad de Pucallpa, al Hospital Amazónico, </b>porque ahí con toda seguridad iban a curarla. </p><p class="txt-his">En el trayecto del camino, ella jamás imaginó lo que tenían planeado hacer con su cuerpo.</p><p class="txt-his">“Me pusieron en la camilla <b>sin decir nada, me ataron manos y pies </b>para que no me moviera...pensé que me hacían eso para curar mi hemorragia”. </p><p class="txt-his">Al despertarse, Lidia Rodríguez estaba esterilizada. Le reclamó a las enfermeras. Y ellas le respondieron:“¿Por qué tanta pregunta?, ya te explicamos, <a target="_blank" href="http://larepublica.pe/politica/773723-luis-bambaren-hay-etnias-que-desaparecieron-por-las-esterilizaciones-forzadas">muchos hijos tienes”.</a></p><p class="txt-his"><b>La obligaron a firmar un papel </b>que nunca leyó, que nunca le leyeron. Estando en la cama, con mucho dolor, las enfermeras molestas le dijeron: “¡firma, firma, firma de una vez!”</p><p class="txt-his">Pasados cuatro meses luego de la ligadura, Lidia Rodríguez tuvo relaciones sexuales. Relata que sentía dolor y poco placer. Intentó nuevamente un año más tarde, pero era lo mismo. <b>Nunca más volvió a tener sexo.</b></p><p class="txt-his">A su mamá, Dorotea Gonzáles Valle, también <a target="_blank" href="http://larepublica.pe/impresa/en-portada/722457-la-campesina-seferina-castro-fue-esterilizada-cuando-tenia-dos-meses-de-embarazo">la esterilizaron</a>en el Hospital Amazónico. Su historia clínica, conseguida por La República, no registra ningún documento en el cual ella autorice que le liguen las trompas. </p>'; 
 }
 
 
@@ -103,7 +173,7 @@ function cambia_shipibo3(){
 }
 function cambia_español3(){
    var elemento = document.getElementById("capa-3"); 
-   elemento.innerHTML = "<p>La señora Lucía Zumaeta López fue una víctima más de la estrategia que aplicaba el Hospital Amazónico, ubicado en la ciudad de Pucallpa, para esterilizar sin consentimiento. Los doctores aprovechaban el momento en que las mujeres daban a luz, fuera con cesárea o por parto natural, para ligarlas.</p><p>Lucía estaba embarazada de su última hija, Ruth Sánchez Zumaeta, y acudió junto con su esposo al hospital para dar a luz.</p><p>“Me hicieron la ligadura y la cesárea al mismo tiempo. A mí no me han avisado, yo no sabía, así ha sido”</p><p>Recién al día siguiente las enfermeras le contaron a su esposo la verdad. Él les reclamó, pero ellas respondieron  lo que suelen repetir en costa, sierra y selva; en postas de salud en zonas rurales o en modernos hospitales en la ciudad: “Nosotros estamos ordenados por el Gobierno, solo cumplimos órdenes”.</p><p>En su historia clínica, conseguida por La República, está indicado que el 22 de setiembre de 1998 los médicos escribieron: “OP CSTP + LTB”, es decir: Operación de Cesárea y al mismo tiempo Bloqueo Tubárico Bilateral, comúnmente conocido como ligadura de trompas.</p><p>Además, el documento señala que Lucía tenía Preeclampsia Severa, una grave condición médica en la cual la paciente no está en la condición de tomar decisiones en lo absoluto.</p><br><img src='images/doc1.jpg' width='100%'/> </p><p>Pero eso no es todo. La historia clínica muestra que la señora Zumaeta consintió una cesárea, pero no consigna en ninguna de sus 73 páginas que aceptará que la esterilizaran.</p><br> <img src='images/doc2.jpg' width='100%'/> <p>Lucía Zumaeta López no denunció en su momento por desconocimiento, pero hoy que ha roto su silencio está dispuesta a hacerlo. Ella está esperando que vaya La Fiscalía a tomar su testimonio, y el del resto de cientos de sus compañeras shipibas.</p><p>AVISO URGENTE: ¡¡¡HASTA EL DÍA DE HOY LA FISCALÍA NO HA IDO A RECOGER LOS TESTIMONIOS DE LAS SEÑORAS SHIBIBAS, Y SIN EMBARGO YA ARCHIVÓ EL CASO !!!</p>"; 
+   elemento.innerHTML = '<br/> <p class="txt-his"> La shipiba Lucía Zumaeta López fue una víctima más de la estrategia que aplicaba el Hospital Amazónico, ubicado en la ciudad de Pucallpa, para<a target="_blank" href="http://larepublica.pe/impresa/politica/783684-historias-clinicas-prueban-que-shipibas-fueron-esterilizadas-sin-su-consentimiento">esterilizar sin consentimiento. </a>Los doctores <b>aprovechaban el momento en que las mujeres daban a luz, fuera con cesárea o por parto natural, para ligarlas. </b></p><p class="txt-his"> Ella estaba embarazada de su última hija, Ruth Sánchez Zumaeta, y acudió junto con su esposo al hospital para dar a luz.</p><p class="txt-his"> “Me hicieron la ligadura y la cesárea al mismo tiempo. A mí no me han avisado, <b>yo no sabía, así ha sido”.</b></p><p class="txt-his"> Recién al día siguiente de que la esterilizaran, las enfermeras le contaron a su esposo la verdad. Él les reclamó, pero ellas le respondieron: <a target="_blank" href="http://larepublica.pe/impresa/en-portada/752295-ningun-medico-actuaba-por-su-cuenta-sino-que-obedecia-los-mandatos-del-gobierno">“Nosotras estamos ordenadas por el Gobierno </a>solo cumplimos órdenes”.</p><p class="txt-his"> En la <b>historia clínica de Lucía Zumaeta, |conseguida por </b><b>La República, </b>está indicado que el 22 de setiembre de 1998 los médicos escribieron: “OP CSTP + LTB”, es decir: Operación de Cesárea y al mismo tiempo Bloqueo Tubárico Bilateral, comúnmente conocido como ligadura de trompas. </p><p class="txt-his"> Además, el documento señala que la paciente tenía Preeclampsia Severa, una grave condición médica en la cual <b>no está en la condición de tomar decisiones en lo absoluto.</b></p><br/><img id="lucia1" src="images/doc1.jpg" width="100%" alt=""/><br/><br/> <p class="txt-his">Pero eso no es todo. La historia clínica muestra que consintió una cesárea, pero </p><b>no consigna en ninguna de sus 73 páginas que aceptará que la esterilizaran.</b><br/><img id="lucia2" src="images/doc2.jpg" width="100%" alt=""/><br/><br/> <p class="txt-his">Lucía Zumaeta no denunció en su momento por desconocimiento, pero hoy que ha roto su silencio está dispuesta a hacerlo.<a target="_blank" href="http://larepublica.pe/impresa/politica/731693-victimas-de-esterilizaciones-afirman-haber-recibido-maltrato-de-los-fiscales">Ella pide que la Fiscalía le tome su testimonio.</a></p>'; 
 }
 
 
