@@ -108,6 +108,12 @@ nav {
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
+.navbar-default .navbar-nav>li>a.arch {
+    color: #e8a396;
+}
+.navbar-default .navbar-nav>li>a.arch:hover {
+    color: #fff;
+}
 .navbar-default .navbar-nav{
     li {
       a:hover  {

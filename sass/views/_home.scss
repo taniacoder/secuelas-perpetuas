@@ -41,7 +41,7 @@ body {
 
 .video-container .filter {
   z-index: 100;
-  position: relative;
+  /*position: relative;*/
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
 }
@@ -90,13 +90,24 @@ body {
 }
 
 .video-container video {
-  /*position: absolute;*/
-  z-index: 0;
-  bottom: 0;
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    /* z-index: -100; */
+    transform: translateX(-51%) translateY(-50%);
+    background: url(images/poster.jpg) no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    /* margin-left: -11.5vw; */
+    background-position: 100% 100%;
 }
 
 .video-container video.fillWidth {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 
