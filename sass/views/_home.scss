@@ -92,7 +92,7 @@ body {
 .video-container video {
       position: absolute;
     top: 50%;
-    left: 50%;
+    left: 53%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -107,7 +107,7 @@ body {
 }
 
 .video-container video.fillWidth {
-  /*width: 100%;*/
+  width: 100%;
 }
 
 
@@ -240,4 +240,57 @@ i {
   color: #fff;
 }
 
+/*medias*/
 
+/*home*/
+@media screen and (max-width: 700px) {
+  .video-container .title-container {
+    top: 9%;
+    width: 100%;
+}
+  .arrow {
+   margin-left: -20px; 
+  }
+    .video-container .description .inner {
+    width: 100%;
+  }
+  .hidden {
+    display: block!important;
+  }
+    
+}
+
+@media screen and (max-width: 320px) {
+  .headline {
+    img {
+      width: 280px;
+    }
+  }
+  span.hashtag {
+    font-size: 2.3rem;
+  }
+  .navbar-brand-none {
+    img {
+      width: 230px;
+    }
+  }
+
+  .video-container .title-container {
+    top: 9%;
+    width: 100%;
+}
+  .arrow {
+   margin-left: -20px; 
+  }
+    
+}
+/*casos*/
+
+@media screen and (max-width: 700px) {
+  .casos-shipibas h2 {
+    font-weight: 700;
+    margin: 3% 0 2%;
+    font-size: 1.2em;
+}
+    
+}
