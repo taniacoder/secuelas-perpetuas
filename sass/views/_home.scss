@@ -92,7 +92,7 @@ body {
 .video-container video {
       position: absolute;
     top: 50%;
-    left: 53%;
+    left: 48%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -107,7 +107,7 @@ body {
 }
 
 .video-container video.fillWidth {
-  width: 100%;
+  width: 111%;
 }
 
 
@@ -150,6 +150,7 @@ span.hashtag {
 }
 
 .intro {
+    margin-top: 10%;
     p {
         margin: 3% 0;
        font-size: 16px; 
@@ -239,7 +240,9 @@ i {
   display: block;
   color: #fff;
 }
-
+.img-movil {
+  display: none;
+}
 /*medias*/
 
 /*home*/
@@ -266,12 +269,9 @@ i {
       width: 280px;
     }
   }
-  span.hashtag {
-    font-size: 2.3rem;
-  }
   .navbar-brand-none {
     img {
-      width: 230px;
+      width: 197px;
     }
   }
 
@@ -287,10 +287,37 @@ i {
 /*casos*/
 
 @media screen and (max-width: 700px) {
+  .menu-home {
+    background-color: rgba(0, 0, 0, 0.67);
+}
+  .headline h1 {
+        margin-top: 4px;
+    a.v-center{
+    display: block;
+  }
+}
+  .img-movil {
+    display: inherit;
+    margin: auto;
+  }
   .casos-shipibas h2 {
     font-weight: 700;
     margin: 3% 0 2%;
     font-size: 1.2em;
+}
+.video-container .description .inner {
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+span.hashtag {
+    font-size: 1.5rem;
+}
+.headline img {
+    width: 200px;
+}
+.tw-meli h5 {
+  font-size: 12px;
 }
     
 }

@@ -238,12 +238,66 @@ margin-top:20px;
 }*/
 /* End carousel */
 
+iframe {
+	display: flex;
+	width: 630px;
+	height: 354px;
+	margin: auto;
+
+}
 
 
+@media screen and (max-width: 730px) {
+	.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+	}
+  iframe {
+	width: 530px;
+	height: 298px;
 
+	}
+}
 
+@media screen and (max-width: 650px) {
+  iframe {
+	width: 530px;
+	height: 298px;
 
+}
+}
 
+@media screen and (max-width: 550px) {
+  iframe {
+	width: 440px;
+	height: 247px;
+}
+}
+@media screen and (max-width: 478px) {
+  iframe {
+	width: 350px;
+	height: 197px;
+
+	}
+
+}
+@media screen and (max-width: 400px) {
+  iframe {
+	width: 320px;
+	height: 180px;
+
+	}
+
+}
+@media screen and (max-width: 320px) {
+  iframe {
+	width: 252px;
+	height: 142px;
+
+	}
+
+}
 
 
 

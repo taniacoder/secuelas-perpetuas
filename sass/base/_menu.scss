@@ -96,7 +96,7 @@ nav {
 }
 
 .navbar-default .navbar-nav>li>a {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: #fff;
     font-weight: 600;
     font-size: 1.9rem;
@@ -109,7 +109,7 @@ nav {
     flex-grow: 1;
 }
 .navbar-default .navbar-nav>li>a.arch {
-    color: #e8a396;
+     color: #cc7a18;
 }
 .navbar-default .navbar-nav>li>a.arch:hover {
     color: #fff;
@@ -117,19 +117,19 @@ nav {
 .navbar-default .navbar-nav{
     li {
       a:hover  {
-      color: #e8a396;
+      color: #cc7a18;
       background-color: transparent;        
       }
       a:focus {
-       color: #e8a396;
+       color: #cc7a18;
       }
       a:active {
-       color: #e8a396;
+       color: #cc7a18;
       }
     }
   } 
   .navbar-default .navbar-nav li a:active {
-    color: #e8a396;
+    color: #cc7a18;
 }
 .menu-home {
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
@@ -143,9 +143,24 @@ nav {
 .nav > li > a > img {
     max-width: 188;
 }
+.img-responsive {
+  margin: auto;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(221, 221, 221, 0);
+}
+
+.navbar-default .navbar-toggle {
+   border-color: rgba(221, 221, 221, 0);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
 @media screen and (max-width: 500px) {
   .menu-home {
-    background-color: #9b3604;
     background-image: none;
   }
   .navbar-brand > img {
@@ -163,4 +178,20 @@ nav {
     display: none;
   }
   
+}
+
+
+@media screen and (max-width: 1430px) {
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 1245px) {
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    padding: 0 3%;
+}
 }

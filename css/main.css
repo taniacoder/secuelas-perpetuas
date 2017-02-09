@@ -6042,6 +6042,48 @@ p a {
   height: 100px
 }*/
 /* End carousel */
+iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 630px;
+  height: 354px;
+  margin: auto; }
+
+@media screen and (max-width: 730px) {
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; }
+  iframe {
+    width: 530px;
+    height: 298px; } }
+
+@media screen and (max-width: 650px) {
+  iframe {
+    width: 530px;
+    height: 298px; } }
+
+@media screen and (max-width: 550px) {
+  iframe {
+    width: 440px;
+    height: 247px; } }
+
+@media screen and (max-width: 478px) {
+  iframe {
+    width: 350px;
+    height: 197px; } }
+
+@media screen and (max-width: 400px) {
+  iframe {
+    width: 320px;
+    height: 180px; } }
+
+@media screen and (max-width: 320px) {
+  iframe {
+    width: 252px;
+    height: 142px; } }
+
 /*cuadro jalador*/
 .cuadro-jalador {
   background-color: white;
@@ -6173,7 +6215,7 @@ nav {
   visibility: inherit; }
 
 .navbar-default .navbar-nav > li > a {
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: #fff;
   font-weight: 600;
   font-size: 1.9rem;
@@ -6186,23 +6228,23 @@ nav {
   flex-grow: 1; }
 
 .navbar-default .navbar-nav > li > a.arch {
-  color: #e8a396; }
+  color: #cc7a18; }
 
 .navbar-default .navbar-nav > li > a.arch:hover {
   color: #fff; }
 
 .navbar-default .navbar-nav li a:hover {
-  color: #e8a396;
+  color: #cc7a18;
   background-color: transparent; }
 
 .navbar-default .navbar-nav li a:focus {
-  color: #e8a396; }
+  color: #cc7a18; }
 
 .navbar-default .navbar-nav li a:active {
-  color: #e8a396; }
+  color: #cc7a18; }
 
 .navbar-default .navbar-nav li a:active {
-  color: #e8a396; }
+  color: #cc7a18; }
 
 .menu-home {
   background-image: -webkit-linear-gradient(90deg, transparent 0%, #000 100%);
@@ -6216,9 +6258,20 @@ nav {
 .nav > li > a > img {
   max-width: 188; }
 
+.img-responsive {
+  margin: auto; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgba(221, 221, 221, 0); }
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(221, 221, 221, 0); }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
 @media screen and (max-width: 500px) {
   .menu-home {
-    background-color: #9b3604;
     background-image: none; }
   .navbar-brand > img {
     width: 200px; } }
@@ -6230,6 +6283,17 @@ nav {
 @media screen and (max-width: 940px) {
   .menu-md {
     display: none; } }
+
+@media screen and (max-width: 1430px) {
+  .navbar-default .navbar-nav > li > a {
+    letter-spacing: 3px;
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 1245px) {
+  .navbar-default .navbar-nav > li > a {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    padding: 0 3%; } }
 
 .colleccion {
   padding-top: 105px; }
@@ -6319,7 +6383,7 @@ body {
 .video-container video {
   position: absolute;
   top: 50%;
-  left: 53%;
+  left: 48%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -6335,7 +6399,7 @@ body {
   background-position: 100% 100%; }
 
 .video-container video.fillWidth {
-  width: 100%; }
+  width: 111%; }
 
 /*//*/
 .content-logo {
@@ -6372,9 +6436,11 @@ span.hashtag {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33);
   font-family: 'Cabin', sans-serif; }
 
-.intro p {
-  margin: 3% 0;
-  font-size: 16px; }
+.intro {
+  margin-top: 10%; }
+  .intro p {
+    margin: 3% 0;
+    font-size: 16px; }
 
 .fixed-top {
   position: fixed;
@@ -6430,6 +6496,9 @@ i {
   display: block;
   color: #fff; }
 
+.img-movil {
+  display: none; }
+
 /*medias*/
 /*home*/
 @media screen and (max-width: 700px) {
@@ -6446,10 +6515,8 @@ i {
 @media screen and (max-width: 320px) {
   .headline img {
     width: 280px; }
-  span.hashtag {
-    font-size: 2.3rem; }
   .navbar-brand-none img {
-    width: 230px; }
+    width: 197px; }
   .video-container .title-container {
     top: 9%;
     width: 100%; }
@@ -6458,10 +6525,29 @@ i {
 
 /*casos*/
 @media screen and (max-width: 700px) {
+  .menu-home {
+    background-color: rgba(0, 0, 0, 0.67); }
+  .headline h1 {
+    margin-top: 4px; }
+    .headline h1 a.v-center {
+      display: block; }
+  .img-movil {
+    display: inherit;
+    margin: auto; }
   .casos-shipibas h2 {
     font-weight: 700;
     margin: 3% 0 2%;
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+  .video-container .description .inner {
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto; }
+  span.hashtag {
+    font-size: 1.5rem; }
+  .headline img {
+    width: 200px; }
+  .tw-meli h5 {
+    font-size: 12px; } }
 
 .txt-intro-shipibas {
   text-align: center;
