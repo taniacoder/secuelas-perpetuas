@@ -6228,20 +6228,20 @@ nav {
   flex-grow: 1; }
 
 .navbar-default .navbar-nav > li > a.arch {
-  color: #cc7a18; }
+  color: #dc9c4f; }
 
 .navbar-default .navbar-nav > li > a.arch:hover {
   color: #fff; }
 
 .navbar-default .navbar-nav li a:hover {
-  color: #cc7a18;
+  color: #dc9c4f;
   background-color: transparent; }
 
 .navbar-default .navbar-nav li a:focus {
-  color: #cc7a18; }
+  color: #dc9c4f; }
 
 .navbar-default .navbar-nav li a:active {
-  color: #cc7a18; }
+  color: #dc9c4f; }
 
 .navbar-default .navbar-nav li a:active {
   color: #cc7a18; }
