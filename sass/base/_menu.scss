@@ -109,7 +109,7 @@ nav {
     flex-grow: 1;
 }
 .navbar-default .navbar-nav>li>a.arch {
-     color: #dc9c4f;
+     color: #f3c895;
 }
 .navbar-default .navbar-nav>li>a.arch:hover {
     color: #fff;
@@ -117,19 +117,19 @@ nav {
 .navbar-default .navbar-nav{
     li {
       a:hover  {
-      color: #dc9c4f;
+      color: #f3c895;
       background-color: transparent;        
       }
       a:focus {
-       color: #dc9c4f;
+       color: #f3c895;
       }
       a:active {
-       color: #dc9c4f;
+       color: #f3c895;
       }
     }
   } 
   .navbar-default .navbar-nav li a:active {
-    color: #cc7a18;
+    color: #f3c895;
 }
 .menu-home {
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
