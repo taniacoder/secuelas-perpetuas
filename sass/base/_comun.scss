@@ -63,8 +63,20 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 		}
 	input:hover{
 		 background-color: rgb(160, 97, 109);
+		}
+	input:active {
+    background-color: #a0616d;
+	}
+	input:focus {
+    background-color: #a0616d;
 	}
 }
+
+.active  {
+  color: #444;
+}
+
+
 
 .txt-his{
 	font-size: 19px;

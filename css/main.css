@@ -5825,6 +5825,15 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 #botones input:hover {
   background-color: #a0616d; }
 
+#botones input:active {
+  background-color: #a0616d; }
+
+#botones input:focus {
+  background-color: #a0616d; }
+
+.active {
+  color: #444; }
+
 .txt-his {
   font-size: 19px; }
 
