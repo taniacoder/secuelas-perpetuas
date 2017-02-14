@@ -5826,7 +5826,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-color: #a0616d; }
 
 .txt-his {
-  font-size: 17px; }
+  font-size: 19px; }
 
 p b {
   font-weight: 900; }
@@ -6269,9 +6269,11 @@ span.hashtag {
 
 .intro {
   margin-top: 70px; }
+  .intro .f-s {
+    font-size: 26px; }
   .intro p {
     margin: 3% 0;
-    font-size: 18px; }
+    font-size: 19px; }
 
 .fixed-top {
   position: fixed;
@@ -6333,6 +6335,25 @@ i {
 /*medias*/
 /*home*/
 @media screen and (max-width: 700px) {
+  .intro {
+    margin-top: 70px; }
+    .intro .f-s {
+      font-size: 19px; }
+    .intro p {
+      margin: 3% 0;
+      font-size: 16px; }
+  .txt-his {
+    font-size: 15px; }
+  p b {
+    font-weight: 900; }
+  p a {
+    font-weight: 900;
+    color: #000000;
+    text-decoration: underline; }
+    p a :hover {
+      color: #000000; }
+    p a :focus {
+      color: #000000; }
   .video-container .title-container {
     top: 9%;
     width: 100%; }
