@@ -249,8 +249,13 @@ footer {
 	.share-buttons-square {
     display: flex;
     justify-content: center;
-    .fb {
+    .fb, .twiter {
     	margin: 5px;
     }
 }
+}
+.intro-shipibas {
+	.btn-redes {
+		margin-top: 23px;
+	}
 }

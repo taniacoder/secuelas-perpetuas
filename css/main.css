@@ -5975,8 +5975,11 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .btn-redes .share-buttons-square .fb {
+    .btn-redes .share-buttons-square .fb, .btn-redes .share-buttons-square .twiter {
       margin: 5px; }
+
+.intro-shipibas .btn-redes {
+  margin-top: 23px; }
 
 /*menu*/
 /**/

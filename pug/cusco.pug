@@ -18,7 +18,32 @@ html
 				include base/menu.pug
 			section.container.intro-shipibas
 				.row
-					h2 Testimonios desde Cusco
+					.col-lg-9.col-md-6.col-sm-6.col-xs-12
+						h2 Testimonios desde Cusco
+					.col-lg-3.col-md-6.col-sm-6.col-xs-12
+						.btn-redes
+							.share-buttons-square
+								span.fb
+									.fb-share-button(data-href='http://larepublica.pe/data/secuelas-perpetuas/', data-layout='button', data-mobile-iframe='true')
+										a.fb-xfbml-parse-ignore(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse') Compartir 
+								span.twiter
+									a.twitter-share-button(href='https://twitter.com/share', data-text='Secuelas Perpetuas | Mujeres shipibas y quechuas que sufrieron el impune crimen de las esterilizaciones forzadas', data-via='larepublica_pe', data-size='default', data-hashtags='EsterilizacionesForzadas')
+									script.
+										!function(d, s, id) {
+										var js,
+										fjs = d.getElementsByTagName(s)[0],
+										p = /^http:/.test(d.location)
+										? 'http'
+										: 'https';
+										if (!d.getElementById(id)) {
+										js = d.createElement(s);
+										js.id = id;
+										js.src = p + '://platform.twitter.com/widgets.js';
+										fjs.parentNode.insertBefore(js, fjs);
+										}
+										}(document, 'script', 'twitter-wjs');
+
+				.row
 					.col-lg-12.txt-intro-shipibas
 						p
 							a(target="_blank",href='http://larepublica.pe/impresa/politica/717547-dos-policias-me-llevaron-de-los-brazos-como-ladrona-para-esterilizarme') Mujeres cusqueñas
