@@ -5910,7 +5910,7 @@ p a {
 
 .cuadro-jalador {
   background-color: white;
-  padding: 50px 0 90px; }
+  padding: 20px 0 90px; }
   .cuadro-jalador a {
     color: #9b3604;
     -webkit-transition: 0.4s;
@@ -5994,7 +5994,7 @@ footer {
     .btn-redes .share-buttons-square .fb, .btn-redes .share-buttons-square .twiter {
       margin: 5px; }
 
-.intro-shipibas .btn-redes {
+.intro-shipibas .btn-redes, .colleccion .btn-redes {
   margin-top: 23px; }
 
 /*menu*/
@@ -6513,7 +6513,8 @@ iframe {
   cursor: pointer;
   font-size: 25px;
   margin: 50px 0;
-  position: relative; }
+  position: relative;
+  padding-top: 45px; }
 
 /*Button Three*/
 .button-three {
