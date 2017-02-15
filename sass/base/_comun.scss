@@ -162,6 +162,10 @@ p {
 
 /*cuadro jalador*/
 .cont-button {
+	a {
+    color: #ffffff;
+    text-decoration: none;
+}
     position: absolute;
     top: 60px;
     left: 670px;
@@ -229,6 +233,7 @@ footer {
 		border-top: 1px solid #eee;
 	}
 }
+.cre
 .logofooter {
     text-align: center;
     padding-top: 40px;
@@ -237,10 +242,14 @@ footer {
 .creditos {
 	margin-top: 15px;
 	h4 {
-		font-size: 14px;
+		font-size: 16px;
 	}
-	p {
-		font-size: 12px;
+	ul {
+		list-style: none;
+		li {
+			font-size: 12px;
+    		line-height: 22px;
+		}
 	}
 }
 
