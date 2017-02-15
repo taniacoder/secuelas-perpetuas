@@ -5955,7 +5955,7 @@ footer {
     margin: 7px auto;
     border-top: 1px solid #eee; }
 
-.cre .logofooter {
+.logofooter {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 15px; }
@@ -5963,11 +5963,12 @@ footer {
 .creditos {
   margin-top: 15px; }
   .creditos h4 {
-    font-size: 16px; }
+    font-size: 14px;
+    margin-top: 20px; }
   .creditos ul {
     list-style: none; }
     .creditos ul li {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 22px; }
 
 .fichat {
@@ -6298,7 +6299,8 @@ span.hashtag {
   margin-top: 40px;
   color: #fff; }
   .tw-meli a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: underline; }
 
 /*scroll*/
 
