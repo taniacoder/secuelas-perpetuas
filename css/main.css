@@ -5902,7 +5902,7 @@ p a {
 /*cuadro jalador*/
 .cont-button {
   position: absolute;
-  top: 60px;
+  top: 100px;
   left: 670px; }
   .cont-button a {
     color: #ffffff;
@@ -5970,6 +5970,11 @@ footer {
     .creditos ul li {
       font-size: 13px;
       line-height: 22px; }
+      .creditos ul li a {
+        color: #fff; }
+        .creditos ul li a:hover, .creditos ul li a:focus {
+          color: #f3c895;
+          text-decoration: none; }
 
 .fichat {
   border: 1px solid #ddd;
@@ -6285,8 +6290,13 @@ span.hashtag {
 
 .intro {
   margin-top: 70px; }
-  .intro .f-s {
-    font-size: 26px; }
+  .intro .container {
+    width: 90%; }
+  .intro .btn-redes {
+    padding-top: 15px; }
+  .intro h2 {
+    text-align: center;
+    padding: 0 0 25px; }
   .intro p {
     margin: 3% 0;
     font-size: 19px; }
@@ -6652,7 +6662,7 @@ iframe {
   width: 900px; }
 
 .container {
-  width: 90%;
+  /*width: 90%;*/
   max-width: 900px;
   margin: 0 auto; }
 

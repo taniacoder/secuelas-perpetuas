@@ -167,7 +167,7 @@ p {
     text-decoration: none;
 }
     position: absolute;
-    top: 60px;
+    top: 100px;
     left: 670px;
 }
 .cuadro-jalador {
@@ -251,6 +251,13 @@ footer {
 		li {
 			font-size: 13px;
     		line-height: 22px;
+    		a {
+    			color: #fff;
+	    		&:hover, &:focus {
+			    color: #f3c895;
+			    text-decoration: none;
+				}
+			}
 		}
 	}
 }
