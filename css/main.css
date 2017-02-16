@@ -6148,6 +6148,11 @@ footer {
 
 .colleccion {
   padding-top: 105px; }
+  .colleccion a {
+    color: #9b3604;
+    text-decoration: none; }
+    .colleccion a:hover {
+      text-decoration: underline; }
 
 .notas {
   padding: 3% 0; }

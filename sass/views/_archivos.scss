@@ -1,5 +1,12 @@
 .colleccion {
         padding-top: 105px;
+        a {
+		    color: #9b3604;
+		    text-decoration: none;
+		    &:hover {
+		    	text-decoration: underline;
+		    }
+		}
 }
 .notas{
 	padding: 3% 0;
